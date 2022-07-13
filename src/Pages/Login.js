@@ -8,15 +8,18 @@ const Login = () => {
   const [password, setPassword] = useState('');  
 
   const onEmail = (event) => { 
-   setEmail(event.target.value)
+   setEmail(event.target.value) 
+   console.log(email)
   } 
  
   const onPassword = (event) => { 
-   setPassword(event.target.value)
+   setPassword(event.target.value) 
+   console.log(password)
   }
  
-  const handleLogin = () => { 
-   if(email && password) { 
+  const handleLogin = (event) => {  
+    event.preventDefault();
+   if(email !== '' && password !=='') { 
     window.location.href = '/verification'; 
    }
  }
@@ -107,7 +110,7 @@ const Login = () => {
           <h4 className="mb-2">Welcome to Avera Labs 👋</h4>
           <p className="mb-4">Please sign-in to your account and start the adventure</p>
 
-          <form id="formAuthentication" className="mb-3">
+          <form id="formAuthentication" onSubmit={handleLogin} className="mb-3">
             <div className="mb-3">
               <label for="email" className="form-label">Email or Username</label>
               <input
@@ -115,8 +118,9 @@ const Login = () => {
                 className="form-control"
                 id="email" 
                 value={email} 
-                onChange={(e) => onEmail(e)}
-                name="email-username"
+                onChange={onEmail}
+                name="email-username" 
+                required
                 placeholder="Enter your email or username"
                 autofocus
               />
@@ -134,7 +138,8 @@ const Login = () => {
                   id="password"
                   className="form-control"
                   name="password"  
-                  onChange={(e) => onPassword(e)}
+                  onChange={onPassword} 
+                  required
                   value={password}
                   placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
                   aria-describedby="password"
@@ -148,7 +153,7 @@ const Login = () => {
                 <label className="form-check-label" for="remember-me"> Remember Me </label>
               </div> */}
             </div>
-            <button onClick={handleLogin} className="btn btn-primary d-grid w-100">Sign in</button>
+            <button type='submit' className="btn btn-primary d-grid w-100">Sign in</button>
           </form>
 
           {/* <p className="text-center">

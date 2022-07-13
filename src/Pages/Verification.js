@@ -2,7 +2,14 @@ import React, {useState} from 'react'
 
 const Verification = () => {
 
-  const [code, setCode] = useState(''); 
+  const [code, setCode] = useState('');  
+
+  const handleVerification = (event) => { 
+    event.preventDefault();
+    if(code == '') {
+      window.location.href = '/frontdesk'
+    }
+  }
 
   return (
     <div className="authentication-wrapper authentication-basic px-4">
@@ -73,7 +80,7 @@ const Verification = () => {
             <span className="fw-bold d-block mt-2">******1234</span>
           </p>
           <p className="mb-0 fw-semibold">Type your 6 digit security code</p>
-          <form id="twoStepsForm" action="index.html" method="POST">
+          <form id="twoStepsForm" onSubmit={handleVerification}>
             <div className="mb-3">
               <div
                 className="auth-input-wrapper d-flex align-items-center justify-content-sm-between numeral-mask-wrapper"
@@ -113,7 +120,7 @@ const Verification = () => {
               {/* <!-- Create a hidden field which is combined by 3 fields above --> */}
               <input type="hidden" name="otp" />
             </div>
-            <button className="btn btn-primary d-grid w-100 mb-3">Verify my account</button>
+            <button type='submit' className="btn btn-primary d-grid w-100 mb-3">Verify my account</button>
             <div className="text-center">
               Didn't get the code?
               <a href="javascript:void(0);"> Resend </a>
