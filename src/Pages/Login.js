@@ -38,7 +38,7 @@ const Login = () => {
           <div className="mx-auto">
             <h3>Avera for Front Desk Personnels 🥳</h3>
             <p>
-              This is an admin page for Clinical Front desk Personnels<br />
+              This is an admin page for Clinical Front Desk Personnels<br />
                Start by signing in with your email & password.
             </p>
           </div>
@@ -104,10 +104,10 @@ const Login = () => {
             </a>
           </div>
         
-          <h4 className="mb-2">Welcome to Avera Labs! 👋</h4>
+          <h4 className="mb-2">Welcome to Avera Labs 👋</h4>
           <p className="mb-4">Please sign-in to your account and start the adventure</p>
 
-          <form id="formAuthentication" className="mb-3" action="index.html" method="POST">
+          <form id="formAuthentication" className="mb-3">
             <div className="mb-3">
               <label for="email" className="form-label">Email or Username</label>
               <input
@@ -159,7 +159,7 @@ const Login = () => {
           </p> */}
 
           <div className="divider my-4">
-            <div className="divider-text">or</div>
+            <div className="divider-text"></div>
           </div>
 
           {/* <div className="d-flex justify-content-center">
