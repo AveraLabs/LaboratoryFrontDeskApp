@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react'; 
-import axios from 'axios';
+
 // import {} from 'react-router-dom';
 
 const Login = () => {  
@@ -9,8 +9,8 @@ const Login = () => {
   const [password, setPassword] = useState('');  
 
   const onEmail = (event) => { 
-   setEmail(event.target.value) 
-   console.log(email)
+   setEmail(event.target.value);
+   console.log(email);
   } 
  
   const onPassword = (event) => { 
@@ -19,7 +19,7 @@ const Login = () => {
   }
  
   const handleLogin = (event) => {  
-    event.preventDefault();
+   event.preventDefault();
    if(email !== '' && password !=='') { 
     window.location.href = '/verification'; 
    }
