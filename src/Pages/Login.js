@@ -1,5 +1,6 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState } from 'react'; 
+import axios from 'axios';
 // import {} from 'react-router-dom';
 
 const Login = () => {  
@@ -13,8 +14,8 @@ const Login = () => {
   } 
  
   const onPassword = (event) => { 
-   setPassword(event.target.value) 
-   console.log(password)
+   setPassword(event.target.value);
+   console.log(password);
   }
  
   const handleLogin = (event) => {  
@@ -164,7 +165,7 @@ const Login = () => {
           </p> */}
 
           <div className="divider my-4">
-            <div className="divider-text"></div>
+            <div className="divider-text">Avera labs</div>
           </div>
 
           {/* <div className="d-flex justify-content-center">
