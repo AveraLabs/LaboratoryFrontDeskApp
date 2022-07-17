@@ -295,9 +295,7 @@ function Home() {
         <div className="drag-target"></div>
       </div>
       
-    
     );
-  
 }
  
 export default Home;

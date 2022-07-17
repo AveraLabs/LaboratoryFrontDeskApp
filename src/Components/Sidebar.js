@@ -70,14 +70,15 @@ function Sidebar() {
             <div className="menu-divider mt-0"></div>
   
             <div className="menu-inner-shadow"></div>
-  
+            {/* href="javascript:void(0);" */}
             <ul className="menu-inner py-1">
-              {/* <!-- Dashboards --> */}
+              {/* <!-- Pending Bookings --> */}
               <li className="menu-item active">
-                <a href="javascript:void(0);" className="menu-link">
+                <Link to={"/pendingbookings"} className="menu-link">
                   <i className="menu-icon tf-icons bx bx-home-circle"></i>
-                  <div data-i18n="Dashboards">Pending Bookings</div>
-                </a>
+                  <div data-i18n="Pending Bookings">Pending Bookings</div>
+                </Link> 
+                {/* Menu sub */}
                 <ul className="menu-sub">
                   <li className="menu-item">
                     <a href="index.html" className="menu-link">
@@ -92,14 +93,14 @@ function Sidebar() {
                 </ul>
               </li>
   
-              {/* <!-- Layouts --> */}
+              {/* <!-- All tests today --> */}
               <li className="menu-item">
-                <a href="javascript:void(0);" className="menu-link">
+                <Link to={"/alltests"} className="menu-link">
                   <i className="menu-icon tf-icons bx bx-layout"></i>
-                  <div data-i18n="Layouts">All tests today</div>
-                </a>
+                  <div data-i18n="All tests today">All tests today</div>
+                </Link>
   
-                <ul className="menu-sub">
+                {/* <ul className="menu-sub">
                   <li className="menu-item">
                     <a href="layouts-collapsed-menu.html" className="menu-link">
                       <div data-i18n="Collapsed menu">Collapsed menu</div>
@@ -145,23 +146,27 @@ function Sidebar() {
                       <div data-i18n="Blank">Blank</div>
                     </a>
                   </li>
-                </ul>
+                </ul> */}
               </li>
   
-              {/* <!-- Apps & Pages --> */}
+              {/* <!-- OTHER SESSIONS --> */}
               <li className="menu-header small text-uppercase"><span className="menu-header-text">OTHER SESSIONS</span></li>
+              {/* Did not show up */}
               <li className="menu-item">
-                <a href="app-calendar.html" className="menu-link">
+                <Link to={"/didnotshowup"} className="menu-link">
                   <i className="menu-icon tf-icons bx bx-calendar"></i>
-                  <div data-i18n="Calendar">Did not show up</div>
-                </a>
-              </li>
+                  <div data-i18n="Did not show up">Did not show up</div>
+                </Link>
+              </li>  
+
+              {/* Cancelled appointment */}
               <li className="menu-item">
-                <a href="javascript:void(0);" className="menu-link">
+                <Link to="/cancelledappointment" className="menu-link">
                   <i className="menu-icon tf-icons bx bx-food-menu"></i>
-                  <div data-i18n="Invoice">Cancelled appointment</div>
-                </a>
-                <ul className="menu-sub">
+                  <div data-i18n="Cancelled appointment">Cancelled appointment</div>
+                </Link> 
+
+                {/* <ul className="menu-sub">
                   <li className="menu-item">
                     <a href="app-invoice-list.html" className="menu-link">
                       <div data-i18n="List">List</div>
@@ -182,14 +187,16 @@ function Sidebar() {
                       <div data-i18n="Add">Add</div>
                     </a>
                   </li>
-                </ul>
-              </li>
+                </ul> */}
+              </li> 
+
+              {/* Calender */}
               <li className="menu-item">
-                <a href="javascript:void(0);" className="menu-link">
+                <Link to="/calendar" className="menu-link">
                   <i className="menu-icon tf-icons bx bx-user"></i>
-                  <div data-i18n="Users">Calendar</div>
-                </a>
-                <ul className="menu-sub">
+                  <div data-i18n="Calender">Calendar</div>
+                </Link>
+                {/* <ul className="menu-sub">
                   <li className="menu-item active">
                     <a href="app-user-list.html" className="menu-link">
                       <div data-i18n="List">List</div>
@@ -227,13 +234,11 @@ function Sidebar() {
                       </li>
                     </ul>
                   </li>
-                </ul>
+                </ul> */}
               </li>
         
               <li className="menu-item">
-               
                 <ul className="menu-sub">
-                
                 </ul>
               </li>
             </ul>
