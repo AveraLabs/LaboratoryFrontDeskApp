@@ -1,9 +1,10 @@
 import React from 'react';
+
 import Navbar from '../Components/Navbar'; 
 import Sidebar from '../Components/Sidebar';
 
 
-function Home() {
+function AllTestToday() {
     return (
       // <!-- Layout wrapper -->
       <div className="layout-wrapper layout-content-navbar">
@@ -13,17 +14,15 @@ function Home() {
 
           {/* <!-- Layout container --> */}
           <div className="layout-page">
-            {/* <!-- Navbar --> */}
               <Navbar />      
-
-            {/* <!-- / Navbar --> */}
+             {/* <!-- / Navbar --> */}
   
-            {/* <!-- Content wrapper --> */}
+             {/* <!-- Content wrapper - All Test Today --> */}
             <div className="content-wrapper">
               {/* <!-- Content --> */}
   
               <div className="container-xxl flex-grow-1 container-p-y">
-                <div className="row g-4 mb-4">
+                {/* <div className="row g-4 mb-4">
                   <div className="col-sm-6 col-xl-3">
                     <div className="card">
                       <div className="card-body">
@@ -100,12 +99,12 @@ function Home() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 {/* <!-- Users List Table --> */} 
                 
                 <div className="card">
                   <div className="card-header border-bottom">
-                    <h5 className="card-title">Search Filter</h5>
+                    <h5 className="card-title">All Tests Today</h5>
                     <div className="d-flex justify-content-between align-items-center row py-3 gap-3 gap-md-0">
                       <div className="col-md-4 user_role"></div>
                       <div className="col-md-4 user_plan"></div>
@@ -298,4 +297,4 @@ function Home() {
     );
 }
  
-export default Home;
+export default AllTestToday;

@@ -74,10 +74,10 @@ function Sidebar() {
             <ul className="menu-inner py-1">
               {/* <!-- Pending Bookings --> */}
               <li className="menu-item active">
-                <Link to={"/pendingbookings"} className="menu-link">
+                <a href={"/frontdesk"} className="menu-link">
                   <i className="menu-icon tf-icons bx bx-home-circle"></i>
                   <div data-i18n="Pending Bookings">Pending Bookings</div>
-                </Link> 
+                </a> 
                 {/* Menu sub */}
                 <ul className="menu-sub">
                   <li className="menu-item">
@@ -95,58 +95,11 @@ function Sidebar() {
   
               {/* <!-- All tests today --> */}
               <li className="menu-item">
-                <Link to={"/alltests"} className="menu-link">
+                <a href={"/allteststoday"} className="menu-link">
                   <i className="menu-icon tf-icons bx bx-layout"></i>
                   <div data-i18n="All tests today">All tests today</div>
-                </Link>
+                </a>
   
-                {/* <ul className="menu-sub">
-                  <li className="menu-item">
-                    <a href="layouts-collapsed-menu.html" className="menu-link">
-                      <div data-i18n="Collapsed menu">Collapsed menu</div>
-                    </a>
-                  </li>
-                  <li className="menu-item">
-                    <a href="layouts-content-navbar.html" className="menu-link">
-                      <div data-i18n="Content navbar">Content navbar</div>
-                    </a>
-                  </li>
-                  <li className="menu-item">
-                    <a href="layouts-content-navbar-with-sidebar.html" className="menu-link">
-                      <div data-i18n="Content nav + Sidebar">Content nav + Sidebar</div>
-                    </a>
-                  </li>
-                  <li className="menu-item">
-                    <a href="../horizontal-menu-template" className="menu-link" target="_blank">
-                      <div data-i18n="Horizontal">Horizontal</div>
-                    </a>
-                  </li>
-                  <li className="menu-item">
-                    <a href="layouts-without-menu.html" className="menu-link">
-                      <div data-i18n="Without menu">Without menu</div>
-                    </a>
-                  </li>
-                  <li className="menu-item">
-                    <a href="layouts-without-navbar.html" className="menu-link">
-                      <div data-i18n="Without navbar">Without navbar</div>
-                    </a>
-                  </li>
-                  <li className="menu-item">
-                    <a href="layouts-fluid.html" className="menu-link">
-                      <div data-i18n="Fluid">Fluid</div>
-                    </a>
-                  </li>
-                  <li className="menu-item">
-                    <a href="layouts-container.html" className="menu-link">
-                      <div data-i18n="Container">Container</div>
-                    </a>
-                  </li>
-                  <li className="menu-item">
-                    <a href="layouts-blank.html" className="menu-link">
-                      <div data-i18n="Blank">Blank</div>
-                    </a>
-                  </li>
-                </ul> */}
               </li>
   
               {/* <!-- OTHER SESSIONS --> */}
@@ -154,7 +107,7 @@ function Sidebar() {
               {/* Did not show up */}
               <li className="menu-item">
                 <Link to={"/didnotshowup"} className="menu-link">
-                  <i className="menu-icon tf-icons bx bx-calendar"></i>
+                <i className="menu-icon tf-icons bx bx-user"></i>
                   <div data-i18n="Did not show up">Did not show up</div>
                 </Link>
               </li>  
@@ -165,76 +118,16 @@ function Sidebar() {
                   <i className="menu-icon tf-icons bx bx-food-menu"></i>
                   <div data-i18n="Cancelled appointment">Cancelled appointment</div>
                 </Link> 
-
-                {/* <ul className="menu-sub">
-                  <li className="menu-item">
-                    <a href="app-invoice-list.html" className="menu-link">
-                      <div data-i18n="List">List</div>
-                    </a>
-                  </li>
-                  <li className="menu-item">
-                    <a href="app-invoice-preview.html" className="menu-link">
-                      <div data-i18n="Preview">Preview</div>
-                    </a>
-                  </li>
-                  <li className="menu-item">
-                    <a href="app-invoice-edit.html" className="menu-link">
-                      <div data-i18n="Edit">Edit</div>
-                    </a>
-                  </li>
-                  <li className="menu-item">
-                    <a href="app-invoice-add.html" className="menu-link">
-                      <div data-i18n="Add">Add</div>
-                    </a>
-                  </li>
-                </ul> */}
               </li> 
 
               {/* Calender */}
               <li className="menu-item">
-                <Link to="/calendar" className="menu-link">
-                  <i className="menu-icon tf-icons bx bx-user"></i>
+                <Link to="/calendar" className="menu-link"> 
+                <i className="menu-icon tf-icons bx bx-calendar"></i>
+                
                   <div data-i18n="Calender">Calendar</div>
                 </Link>
-                {/* <ul className="menu-sub">
-                  <li className="menu-item active">
-                    <a href="app-user-list.html" className="menu-link">
-                      <div data-i18n="List">List</div>
-                    </a>
-                  </li>
-                  <li className="menu-item">
-                    <a href="javascript:void(0);" className="menu-link menu-toggle">
-                      <div data-i18n="View">View</div>
-                    </a>
-                    <ul className="menu-sub">
-                      <li className="menu-item">
-                        <a href="app-user-view-account.html" className="menu-link">
-                          <div data-i18n="Account">Account</div>
-                        </a>
-                      </li>
-                      <li className="menu-item">
-                        <a href="app-user-view-security.html" className="menu-link">
-                          <div data-i18n="Security">Security</div>
-                        </a>
-                      </li>
-                      <li className="menu-item">
-                        <a href="app-user-view-billing.html" className="menu-link">
-                          <div data-i18n="Billing & Plans">Billing & Plans</div>
-                        </a>
-                      </li>
-                      <li className="menu-item">
-                        <a href="app-user-view-notifications.html" className="menu-link">
-                          <div data-i18n="Notifications">Notifications</div>
-                        </a>
-                      </li>
-                      <li className="menu-item">
-                        <a href="app-user-view-connections.html" className="menu-link">
-                          <div data-i18n="Connections">Connections</div>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul> */}
+               
               </li>
         
               <li className="menu-item">

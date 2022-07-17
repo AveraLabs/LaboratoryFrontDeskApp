@@ -24,7 +24,7 @@ function Navbar (){
 
           <ul className="navbar-nav flex-row align-items-center ms-auto">
             {/* <!-- Language --> */}
-            <li className="nav-item dropdown-language dropdown me-2 me-xl-0">
+            {/* <li className="nav-item dropdown-language dropdown me-2 me-xl-0">
               <a className="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                 <i className="fi fi-us fis rounded-circle fs-3 me-1"></i>
               </a>
@@ -54,7 +54,7 @@ function Navbar (){
                   </a>
                 </li>
               </ul>
-            </li>
+            </li> */}
             {/* <!--/ Language --> */}
 
             {/* <!-- Style Switcher --> */}
@@ -96,14 +96,14 @@ function Navbar (){
                       <span className="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
                         <i className="bx bx-calendar fs-4"></i>
                       </span>
-                      <a href="app-calendar.html" className="stretched-link">Calendar</a>
+                      <a href="app-calendar.html" className="stretched-link">Pending Tests</a>
                       <small className="text-muted mb-0">Appointments</small>
                     </div>
                     <div className="dropdown-shortcuts-item col">
                       <span className="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
                         <i className="bx bx-food-menu fs-4"></i>
                       </span>
-                      <a href="app-invoice-list.html" className="stretched-link">Invoice App</a>
+                      <a href="app-invoice-list.html" className="stretched-link">Today's test</a>
                       <small className="text-muted mb-0">Manage Accounts</small>
                     </div>
                   </div>
@@ -112,18 +112,18 @@ function Navbar (){
                       <span className="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
                         <i className="bx bx-user fs-4"></i>
                       </span>
-                      <a href="app-user-list.html" className="stretched-link">User App</a>
+                      <a href="app-user-list.html" className="stretched-link">All tests</a>
                       <small className="text-muted mb-0">Manage Users</small>
                     </div>
                     <div className="dropdown-shortcuts-item col">
                       <span className="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
                         <i className="bx bx-check-shield fs-4"></i>
                       </span>
-                      <a href="app-access-roles.html" className="stretched-link">Role Management</a>
+                      <a href="app-access-roles.html" className="stretched-link">Calendar</a>
                       <small className="text-muted mb-0">Permission</small>
                     </div>
                   </div>
-                  <div className="row row-bordered overflow-visible g-0">
+                  {/* <div className="row row-bordered overflow-visible g-0">
                     <div className="dropdown-shortcuts-item col">
                       <span className="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
                         <i className="bx bx-pie-chart-alt-2 fs-4"></i>
@@ -138,8 +138,8 @@ function Navbar (){
                       <a href="pages-account-settings-account.html" className="stretched-link">Setting</a>
                       <small className="text-muted mb-0">Account Settings</small>
                     </div>
-                  </div>
-                  <div className="row row-bordered overflow-visible g-0">
+                  </div> */}
+                  {/* <div className="row row-bordered overflow-visible g-0">
                     <div className="dropdown-shortcuts-item col">
                       <span className="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
                         <i className="bx bx-help-circle fs-4"></i>
@@ -154,7 +154,7 @@ function Navbar (){
                       <a href="modal-examples.html" className="stretched-link">Modals</a>
                       <small className="text-muted mb-0">Useful Popups</small>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </li>
@@ -421,7 +421,7 @@ function Navbar (){
                       </div>
                       <div className="flex-grow-1">
                         <span className="fw-semibold d-block lh-1">John Doe</span>
-                        <small>Admin</small>
+                        <small>Front Desk </small>
                       </div>
                     </div>
                   </a>
@@ -441,7 +441,7 @@ function Navbar (){
                     <span className="align-middle">Settings</span>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a className="dropdown-item" href="pages-account-settings-billing.html">
                     <span className="d-flex align-items-center align-middle">
                       <i className="flex-shrink-0 bx bx-credit-card me-2"></i>
@@ -451,7 +451,7 @@ function Navbar (){
                       >
                     </span>
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <div className="dropdown-divider"></div>
                 </li>
@@ -461,18 +461,18 @@ function Navbar (){
                     <span className="align-middle">Help</span>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a className="dropdown-item" href="pages-faq.html">
                     <i className="bx bx-help-circle me-2"></i>
                     <span className="align-middle">FAQ</span>
                   </a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a className="dropdown-item" href="pages-pricing.html">
                     <i className="bx bx-dollar me-2"></i>
                     <span className="align-middle">Pricing</span>
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <div className="dropdown-divider"></div>
                 </li>
