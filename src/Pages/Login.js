@@ -1,28 +1,52 @@
 import React from 'react';
 import { useState } from 'react'; 
+import {user} from '../data'; 
+import {emailReg} from '../validations/info';
 
 // import {} from 'react-router-dom';
 
 const Login = () => {  
 
   const [email, setEmail] = useState(''); 
-  const [password, setPassword] = useState('');  
+  const [password, setPassword] = useState('');   
+  const [errors, setErrors] = useState('');  
+  const [emailError, setEmailError] = useState('');
+  const [passwordError, setPasswordError] = useState('');
 
   const onEmail = (event) => { 
-   setEmail(event.target.value);
-   console.log(email);
+    
+    let emailVal = event.target.value; 
+
+    setEmail(event.target.value);  
+
+    if(emailReg.test(emailVal) === false) { 
+     setEmailError('Email entered is invalid!');
+    } else { 
+    setEmailError('');
+    }
   } 
  
-  const onPassword = (event) => { 
-   setPassword(event.target.value);
-   console.log(password);
+  const onPassword = (event) => {   
+ 
+    let passwordVal = event.target.value;
+
+    if(passwordVal.length < 3) { 
+      setPasswordError('Password should not be less than 3 characters');
+    } else { 
+      setPasswordError('');
+    }
+
+    setPassword(event.target.value); 
+
+    console.log(password);
   }
  
   const handleLogin = (event) => {  
    event.preventDefault();
-   if(email !== '' && password !=='') { 
-    window.location.href = '/verification'; 
-   }
+   if(!emailError || !passwordError) { 
+    window.location.href = '/verification';  
+   } 
+   return null;
  }
 
   return (
@@ -111,7 +135,8 @@ const Login = () => {
           <h4 className="mb-2">Welcome to Avera Labs 👋</h4>
           <p className="mb-4">Please sign-in to your account and start the adventure</p>
 
-          <form id="formAuthentication" onSubmit={handleLogin} className="mb-3">
+          <form id="formAuthentication" onSubmit={handleLogin} className="mb-3"> 
+            <p className='errors'> {errors} </p>
             <div className="mb-3">
               <label for="email" className="form-label">Email or Username</label>
               <input
@@ -124,7 +149,8 @@ const Login = () => {
                 required
                 placeholder="Enter your email or username"
                 autofocus
-              />
+              /> 
+             <p className="errors"> {emailError} </p>   
             </div>
             <div className="mb-3 form-password-toggle">
               <div className="d-flex justify-content-between">
@@ -144,9 +170,11 @@ const Login = () => {
                   value={password}
                   placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
                   aria-describedby="password"
-                />
-                <span className="input-group-text cursor-pointer"><i className="bx bx-hide"></i></span>
-              </div>
+                /> 
+                <span className="input-group-text cursor-pointer"><i className="bx bx-hide"></i></span>  
+                <br/>
+              </div> 
+              <p className='errors'> {passwordError} </p>
             </div>
             <div className="mb-3">
               {/* <div className="form-check">
