@@ -1,8 +1,7 @@
 import React from 'react';
 
-import Navbar from '../Components/Navbar'; 
-import Sidebar from '../Components/Sidebar';
-
+import Navbar from '../components/Navbar'; 
+import Sidebar from '../components/Sidebar';
 
 function AllTestToday() {
     return (

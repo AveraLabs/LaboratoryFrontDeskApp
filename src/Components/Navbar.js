@@ -1,5 +1,3 @@
-import React, { Component } from 'react'
-
 function Navbar (){  
     return (   
     <nav className="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme" id="layout-navbar">
