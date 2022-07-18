@@ -2,7 +2,13 @@ import React, {useState} from 'react'
 
 const Verification = () => {
 
-  const [code, setCode] = useState('');  
+  const [code, setCode] = useState('');   
+
+  const [first, setFirstDigit] = useState('')
+  const [second, setSecondDigit] = useState('')
+  const [third, setThirdDigit] = useState('')
+  const [fourth, setFourthDigit] = useState('')
+  const [fifth, setFifthDigit] = useState('')
 
   const handleVerification = (event) => { 
     event.preventDefault();
@@ -86,33 +92,45 @@ const Verification = () => {
                 className="auth-input-wrapper d-flex align-items-center justify-content-sm-between numeral-mask-wrapper"
               >
                 <input
-                  type="text"
+                  type="text" 
+                  onChange={(e) => setFirstDigit(e)}
+                  value=""
                   className="form-control auth-input h-px-50 text-center numeral-mask text-center h-px-50 mx-1 my-2"
                   maxlength="1"
                   autofocus
                 />
                 <input
-                  type="text"
+                  type="text" 
+                  onChange={(e) => setSecondDigit(e)}
+                  value=""
                   className="form-control auth-input h-px-50 text-center numeral-mask text-center h-px-50 mx-1 my-2"
                   maxlength="1"
                 />
                 <input
-                  type="text"
+                  type="text" 
+                  onChange={(e) => setThirdDigit(e)}
+                  value=""
                   className="form-control auth-input h-px-50 text-center numeral-mask text-center h-px-50 mx-1 my-2"
                   maxlength="1"
                 />
                 <input
-                  type="text"
+                  type="text" 
+                  onChange={(e) => setFourthDigit(e)}
+                  value=""
                   className="form-control auth-input h-px-50 text-center numeral-mask text-center h-px-50 mx-1 my-2"
                   maxlength="1"
                 />
                 <input
-                  type="text"
+                  type="text" 
+                  onChange={(e) => setFifthDigit(e)}
+                  value=""
                   className="form-control auth-input h-px-50 text-center numeral-mask text-center h-px-50 mx-1 my-2"
                   maxlength="1"
                 />
                 <input
-                  type="text"
+                  type="text" 
+                  onChange={(e) => setFirstDigit(e)}
+                  value=""
                   className="form-control auth-input h-px-50 text-center numeral-mask text-center h-px-50 mx-1 my-2"
                   maxlength="1"
                 />
