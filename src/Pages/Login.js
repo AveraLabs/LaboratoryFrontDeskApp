@@ -21,8 +21,14 @@ const Login = () => {
 
     if(emailReg.test(emailVal) === false) { 
      setEmailError('Email entered is invalid!');
-    } else { 
+    } 
+    
+    if(!emailReg.test(emailVal) === false) { 
     setEmailError('');
+    } 
+
+    if(emailVal === '') { 
+      setEmailError('');
     }
   } 
  
@@ -32,7 +38,13 @@ const Login = () => {
 
     if(passwordVal.length < 3) { 
       setPasswordError('Password should not be less than 3 characters');
-    } else { 
+    } 
+    
+    if(passwordVal.length > 3){ 
+      setPasswordError('');
+    } 
+
+    if(passwordVal === '') {
       setPasswordError('');
     }
 
