@@ -4,11 +4,12 @@ const Verification = () => {
 
   const [code, setCode] = useState('');   
 
-  const [first, setFirstDigit] = useState('')
-  const [second, setSecondDigit] = useState('')
-  const [third, setThirdDigit] = useState('')
-  const [fourth, setFourthDigit] = useState('')
-  const [fifth, setFifthDigit] = useState('')
+  const [first, setFirstDigit] = useState('');
+  const [second, setSecondDigit] = useState('');
+  const [third, setThirdDigit] = useState('');
+  const [fourth, setFourthDigit] = useState('');
+  const [fifth, setFifthDigit] = useState(''); 
+  const [sixth, setSixthDigit] = useState('');
 
   const handleVerification = (event) => { 
     event.preventDefault();
@@ -93,44 +94,44 @@ const Verification = () => {
               >
                 <input
                   type="text" 
-                  onChange={(e) => setFirstDigit(e)}
-                  value=""
+                  onChange={(e) => setFirstDigit(e.target.value)}
+                  value={first}
                   className="form-control auth-input h-px-50 text-center numeral-mask text-center h-px-50 mx-1 my-2"
                   maxlength="1"
                   autofocus
                 />
                 <input
                   type="text" 
-                  onChange={(e) => setSecondDigit(e)}
-                  value=""
+                  onChange={(e) => setSecondDigit(e.target.value)}
+                  value={second}
                   className="form-control auth-input h-px-50 text-center numeral-mask text-center h-px-50 mx-1 my-2"
                   maxlength="1"
                 />
                 <input
                   type="text" 
-                  onChange={(e) => setThirdDigit(e)}
-                  value=""
+                  onChange={(e) => setThirdDigit(e.target.value)}
+                  value={third}
                   className="form-control auth-input h-px-50 text-center numeral-mask text-center h-px-50 mx-1 my-2"
                   maxlength="1"
                 />
                 <input
                   type="text" 
-                  onChange={(e) => setFourthDigit(e)}
-                  value=""
+                  onChange={(e) => setFourthDigit(e.target.value)}
+                  value={fourth}
                   className="form-control auth-input h-px-50 text-center numeral-mask text-center h-px-50 mx-1 my-2"
                   maxlength="1"
                 />
                 <input
                   type="text" 
-                  onChange={(e) => setFifthDigit(e)}
-                  value=""
+                  onChange={(e) => setFifthDigit(e.target.value)}
+                  value={fifth}
                   className="form-control auth-input h-px-50 text-center numeral-mask text-center h-px-50 mx-1 my-2"
                   maxlength="1"
                 />
                 <input
                   type="text" 
-                  onChange={(e) => setFirstDigit(e)}
-                  value=""
+                  onChange={(e) => setSixthDigit(e.target.value)}
+                  value={sixth}
                   className="form-control auth-input h-px-50 text-center numeral-mask text-center h-px-50 mx-1 my-2"
                   maxlength="1"
                 />
