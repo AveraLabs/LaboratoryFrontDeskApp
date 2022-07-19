@@ -108,9 +108,9 @@ const PendingBookings = () => {
           <div className="card-header border-bottom">
             <h5 className="card-title">Pending Bookings</h5>
             <div className="d-flex justify-content-between align-items-center row py-3 gap-3 gap-md-0">
-              <div className="col-md-4 user_role"></div>
-              <div className="col-md-4 user_plan"></div>
-              <div className="col-md-4 user_status"></div>
+              {/* <div className="col-md-4 user_role"></div>
+              <div className="col-md-4 user_plan"></div> */}
+              {/* <div className="col-md-4 user_status"></div> */}
             </div>
           </div>
           <div className="card-datatable table-responsive">
