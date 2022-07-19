@@ -68,7 +68,7 @@ function Sidebar() {
             </div>
   
             <div className="menu-divider mt-0"></div>
-  
+        
             <div className="menu-inner-shadow"></div>
             {/* href="javascript:void(0);" */}
             <ul className="menu-inner py-1">
@@ -94,16 +94,24 @@ function Sidebar() {
               </li>
   
               {/* <!-- All tests today --> */}
-              <li className="menu-item">
+              {/* <li className="menu-item">
+                <a href={"/allteststoday"} className="menu-link">
+                  <i className="menu-icon tf-icons bx bx-layout"></i>
+                  <div data-i18n="All tests today">All tests today</div>
+                </a>
+  
+              </li> */}
+  
+              {/* <!-- OTHER SESSIONS --> */}
+              <li className="menu-header small text-uppercase "><span className="menu-header-text "></span></li>
+               {/* <!-- All tests today --> */}
+               <li className="menu-item">
                 <a href={"/allteststoday"} className="menu-link">
                   <i className="menu-icon tf-icons bx bx-layout"></i>
                   <div data-i18n="All tests today">All tests today</div>
                 </a>
   
               </li>
-  
-              {/* <!-- OTHER SESSIONS --> */}
-              <li className="menu-header small text-uppercase"><span className="menu-header-text">OTHER SESSIONS</span></li>
               {/* Did not show up */}
               <li className="menu-item">
                 <a href={"/didnotshowup"} className="menu-link">
