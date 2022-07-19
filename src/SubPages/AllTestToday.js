@@ -9,8 +9,7 @@ function AllTestToday() {
       <div className="layout-wrapper layout-content-navbar">
         <div className="layout-container">
           {/* <!-- Menu --> */}
-              <Sidebar /> 
-
+              <Sidebar />  
           {/* <!-- Layout container --> */}
           <div className="layout-page">
               <Navbar />      

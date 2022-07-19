@@ -106,27 +106,27 @@ function Sidebar() {
               <li className="menu-header small text-uppercase"><span className="menu-header-text">OTHER SESSIONS</span></li>
               {/* Did not show up */}
               <li className="menu-item">
-                <Link to={"/didnotshowup"} className="menu-link">
+                <a href={"/didnotshowup"} className="menu-link">
                 <i className="menu-icon tf-icons bx bx-user"></i>
                   <div data-i18n="Did not show up">Did not show up</div>
-                </Link>
+                </a>
               </li>  
 
               {/* Cancelled appointment */}
               <li className="menu-item">
-                <Link to="/cancelledappointment" className="menu-link">
+                <a href="/cancelledappointment" className="menu-link">
                   <i className="menu-icon tf-icons bx bx-food-menu"></i>
                   <div data-i18n="Cancelled appointment">Cancelled appointment</div>
-                </Link> 
+                </a> 
               </li> 
 
               {/* Calender */}
               <li className="menu-item">
-                <Link to="/calendar" className="menu-link"> 
+                <a href="/calendar" className="menu-link"> 
                 <i className="menu-icon tf-icons bx bx-calendar"></i>
                 
                   <div data-i18n="Calender">Calendar</div>
-                </Link>
+                </a>
                
               </li>
         

@@ -101,7 +101,8 @@ const PendingBookings = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> 
+        
         {/* <!-- Users List Table --> */} 
         
         <div className="card">
