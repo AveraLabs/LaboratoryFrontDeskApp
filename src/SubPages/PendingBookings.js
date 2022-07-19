@@ -220,7 +220,7 @@ const PendingBookings = () => {
                     <option value="United States">United States</option>
                   </select>
                 </div>
-                {/* <div className="mb-3">
+                <div className="mb-3">
                   <label className="form-label" for="user-role">User Role</label>
                   <select id="user-role" className="form-select">
                     <option value="subscriber">Subscriber</option>
@@ -229,7 +229,7 @@ const PendingBookings = () => {
                     <option value="author">Author</option>
                     <option value="admin">Admin</option>
                   </select>
-                </div> */}
+                </div>
                 <div className="mb-4">
                   <label className="form-label" for="user-plan">Select Plan</label>
                   <select id="user-plan" className="form-select">

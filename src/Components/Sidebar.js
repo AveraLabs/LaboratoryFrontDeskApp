@@ -76,7 +76,7 @@ function Sidebar() {
               <li className="menu-item active">
                 <a href={"/frontdesk"} className="menu-link">
                   <i className="menu-icon tf-icons bx bx-home-circle"></i>
-                  <div data-i18n="Pending Bookings">Pending Bookings</div>
+                  <div data-i18n="Pending Bookings">Dashboard</div>
                 </a> 
                 {/* Menu sub */}
                 <ul className="menu-sub">
