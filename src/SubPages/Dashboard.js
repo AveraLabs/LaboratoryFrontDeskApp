@@ -15,7 +15,6 @@ const PendingBookings = () => {
           <div className="layout-page">
             {/* <!-- Navbar --> */}
               <Navbar />      
-
             {/* <!-- / Navbar --> */}
     
           <div className="content-wrapper"> 
@@ -102,7 +101,7 @@ const PendingBookings = () => {
             </div>
           </div>
         </div> 
-        
+
         {/* <!-- Users List Table --> */} 
         
         <div className="card">
