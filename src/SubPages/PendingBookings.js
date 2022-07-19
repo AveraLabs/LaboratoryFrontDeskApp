@@ -30,7 +30,7 @@ const PendingBookings = () => {
               <div className="card-body">
                 <div className="d-flex align-items-start justify-content-between">
                   <div className="content-left">
-                    <span>Current Tests</span>
+                    <span>Ongoing Tests</span>
                     <div className="d-flex align-items-end mt-2">
                       <h4 className="mb-0 me-2">21,459</h4>
                       <small className="text-success">(+29%)</small>
@@ -220,7 +220,7 @@ const PendingBookings = () => {
                     <option value="United States">United States</option>
                   </select>
                 </div>
-                <div className="mb-3">
+                {/* <div className="mb-3">
                   <label className="form-label" for="user-role">User Role</label>
                   <select id="user-role" className="form-select">
                     <option value="subscriber">Subscriber</option>
@@ -229,7 +229,7 @@ const PendingBookings = () => {
                     <option value="author">Author</option>
                     <option value="admin">Admin</option>
                   </select>
-                </div>
+                </div> */}
                 <div className="mb-4">
                   <label className="form-label" for="user-plan">Select Plan</label>
                   <select id="user-plan" className="form-select">
