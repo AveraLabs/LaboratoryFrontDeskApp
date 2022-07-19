@@ -7,7 +7,7 @@ import AllTestToday from './SubPages/AllTestToday';
 import DidNotShowUp from './SubPages/DidNotShowUp';
 import CancelledAppointment from './SubPages/CancelledAppointment';
 import Calender  from './SubPages/Calender';
-import PendingBookings from './SubPages/PendingBookings';
+import PendingBookings from './SubPages/Dashboard';
 // ccc
 function App() {
   return (

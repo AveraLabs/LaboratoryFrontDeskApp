@@ -1,15 +1,16 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import PinInput from 'react-pin-input';
 
 const Verification = () => {
 
   const [code, setCode] = useState('');   
 
-  const [first, setFirstDigit] = useState('');
-  const [second, setSecondDigit] = useState('');
-  const [third, setThirdDigit] = useState('');
-  const [fourth, setFourthDigit] = useState('');
-  const [fifth, setFifthDigit] = useState(''); 
-  const [sixth, setSixthDigit] = useState('');
+  // const [first, setFirstDigit] = useState('');
+  // const [second, setSecondDigit] = useState('');
+  // const [third, setThirdDigit] = useState('');
+  // const [fourth, setFourthDigit] = useState('');
+  // const [fifth, setFifthDigit] = useState(''); 
+  // const [sixth, setSixthDigit] = useState('');
 
   const handleVerification = (event) => { 
     event.preventDefault();
@@ -88,8 +89,21 @@ const Verification = () => {
           </p>
           <p className="mb-0 fw-semibold">Type your 6 digit security code</p>
           <form id="twoStepsForm" onSubmit={handleVerification}>
-            <div className="mb-3">
-              <div
+            <div className="mb-3"> 
+            <PinInput 
+              length={6} 
+              initialValue=""
+              onChange={(value, index) => {}} 
+              type="numeric" 
+              inputMode="number"
+              style={{padding: '10px'}}  
+              inputStyle={{borderColor: 'red'}}
+              inputFocusStyle={{borderColor: 'blue'}}
+              onComplete={(value, index) => {}}
+              autoSelect={true}
+              regexCriteria={/^[ A-Za-z0-9_@./#&+-]*$/}
+            />
+              {/* <div
                 className="auth-input-wrapper d-flex align-items-center justify-content-sm-between numeral-mask-wrapper"
               >
                 <input
@@ -135,7 +149,7 @@ const Verification = () => {
                   className="form-control auth-input h-px-50 text-center numeral-mask text-center h-px-50 mx-1 my-2"
                   maxlength="1"
                 />
-              </div>
+              </div> */}
               {/* <!-- Create a hidden field which is combined by 3 fields above --> */}
               <input type="hidden" name="otp" />
             </div>
