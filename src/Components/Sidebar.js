@@ -120,7 +120,7 @@ function Sidebar() {
                 </a> 
               </li> 
 
-              {/* Calender */}
+              {/* Calender item */}
               <li className="menu-item">
                 <a href="/calendar" className="menu-link"> 
                 <i className="menu-icon tf-icons bx bx-calendar"></i>
