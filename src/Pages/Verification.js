@@ -97,7 +97,7 @@ const Verification = () => {
               type="numeric" 
               inputMode="number"
               style={{padding: '10px'}}  
-              inputStyle={{borderColor: 'red'}}
+              inputStyle={{borderColor: 'black'}}
               inputFocusStyle={{borderColor: 'blue'}}
               onComplete={(value, index) => {}}
               autoSelect={true}
