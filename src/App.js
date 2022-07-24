@@ -8,6 +8,8 @@ import DidNotShowUp from './SubPages/DidNotShowUp';
 import CancelledAppointment from './SubPages/CancelledAppointment';
 import Calender  from './SubPages/Calender';
 import PendingBookings from './SubPages/Dashboard';
+import UserProfile  from './SubPages/Profile/UserProfile';
+
 // ccc
 function App() {
   return (
@@ -20,7 +22,8 @@ function App() {
         <Route path="allteststoday" element={<AllTestToday />} />  
         <Route path="didnotshowup" element={<DidNotShowUp />} /> 
         <Route path="cancelledappointment" element={<CancelledAppointment />} /> 
-        <Route path="calendar" element={<Calender />} />
+        <Route path="calendar" element={<Calender />} /> 
+        <Route path="userprofile" element={<UserProfile />} /> 
      </Routes>
     </BrowserRouter>
   );
