@@ -189,20 +189,11 @@ const Login = () => {
               <p className='errors'> {passwordError} </p>
             </div>
             <div className="mb-3">
-              {/* <div className="form-check">
-                <input className="form-check-input" type="checkbox" id="remember-me" />
-                <label className="form-check-label" for="remember-me"> Remember Me </label>
-              </div> */}
+            
             </div>
             <button type='submit' className="btn btn-primary d-grid w-100">Sign in</button>
           </form>
 
-          {/* <p className="text-center">
-            <span>New on our platform?</span>
-            <a href="auth-register-cover.html">
-              <span>Create an account</span>
-            </a>
-          </p> */}
 
           <div className="divider my-4">
             <div className="divider-text">Avera labs</div>
