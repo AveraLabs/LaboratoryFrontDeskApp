@@ -24,10 +24,12 @@ function UserProfile () {
             <div class="container-xxl flex-grow-1 container-p-y">
               <h4 class="py-3 breadcrumb-wrapper mb-4">
                 <span class="text-muted fw-light"></span>User Profile
-              </h4>
+              </h4> 
+
               <div class="row gy-4">
-                {/* <!-- User Sidebar --> */}
-                <div class="col-xl-4 col-lg-5 col-md-5 order-1 order-md-0">
+                {/* <!-- User Sidebar --> */} 
+
+                <div class="col-xl-4 col-lg-5 col-md-5 order-1 order-md-0 card-contain">
                   {/* <!-- User Card --> */}
                   <div class="card mb-4">
                     <div class="card-body">

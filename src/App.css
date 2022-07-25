@@ -2,4 +2,8 @@
   color: #cf1212; 
   font-size: 13px;
   transition: .3s;
+} 
+
+.card-contain { 
+  margin-left: 30%;
 }
