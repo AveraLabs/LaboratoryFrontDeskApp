@@ -20,10 +20,10 @@ function App() {
         <Route path="verification" element={<Verification />}  />
         <Route path='frontdesk' element={<PendingBookings />} /> 
         <Route path="allteststoday" element={<AllTestToday />} />  
+        <Route path='userprofile' element={<UserProfile />} />
         <Route path="didnotshowup" element={<DidNotShowUp />} /> 
         <Route path="cancelledappointment" element={<CancelledAppointment />} /> 
         <Route path="calendar" element={<Calender />} /> 
-        <Route path="userprofile" element={<UserProfile />} /> 
      </Routes>
     </BrowserRouter>
   );
