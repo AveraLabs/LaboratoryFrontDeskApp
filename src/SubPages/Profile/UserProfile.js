@@ -6,12 +6,12 @@ import Sidebar from '../../Components/Sidebar';
 function UserProfile () {
   return ( 
     <div className="layout-wrapper layout-content-navbar"> 
-
+         
     {/* layout container */}
     <div className="layout-container">
       
-      <Sidebar /> 
-
+      <Sidebar />  
+       
       {/* layout page */}
      <div className="layout-page">
         
@@ -21,7 +21,7 @@ function UserProfile () {
      <div class="content-wrapper">
             {/* <!-- Content --> */}
 
-            <div class="container-xxl flex-grow-1 container-p-y">
+            <div class="container-xxl flex-grow-1 container-p-y"> 
               <h4 class="py-3 breadcrumb-wrapper mb-4">
                 <span class="text-muted fw-light"></span>User Profile
               </h4> 
@@ -44,7 +44,7 @@ function UserProfile () {
                           />
                           <div class="user-info text-center">
                             <h5 class="mb-2">Violet Mendoza</h5>
-                            <span class="badge bg-label-secondary">Author</span>
+                            <span class="badge bg-label-secondary"> Customer </span>
                           </div>
                         </div>
                       </div>
@@ -68,18 +68,18 @@ function UserProfile () {
                       <div class="info-container">
                         <ul class="list-unstyled">
                           <li class="mb-3">
-                            <span class="fw-bold me-2">Username:</span>
+                            <span class="fw-bold me-2">Avera ID:</span>
                             <span>violet.dev</span>
                           </li>
                           <li class="mb-3">
-                            <span class="fw-bold me-2">Email:</span>
+                            <span class="fw-bold me-2">Gender:</span>
                             <span>vafgot@vultukir.org</span>
                           </li>
                           <li class="mb-3">
                             <span class="fw-bold me-2">Status:</span>
                             <span class="badge bg-label-success">Active</span>
                           </li>
-                          <li class="mb-3">
+                          {/* <li class="mb-3">
                             <span class="fw-bold me-2">Role:</span>
                             <span>Author</span>
                           </li>
@@ -94,9 +94,9 @@ function UserProfile () {
                           <li class="mb-3">
                             <span class="fw-bold me-2">Languages:</span>
                             <span>French</span>
-                          </li>
+                          </li> */}
                           <li class="mb-3">
-                            <span class="fw-bold me-2">Country:</span>
+                            <span class="fw-bold me-2">Cost:</span>
                             <span>England</span>
                           </li>
                         </ul>

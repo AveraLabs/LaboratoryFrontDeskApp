@@ -121,9 +121,10 @@ const PendingBookings = () => {
                     <tbody className="table-border-bottom-0">
                       <tr>
                         <td><i className="fa fa-user fa-lg text-danger me-3"></i> <strong>7657c174-284e-483f-9113-948e9128cf9c</strong></td>
-                        <td>Albert Cook</td>
-                        <td>
-                          <ul className="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                        <td>Blood test</td>
+                        <td> 
+                        GH₵ 200
+                          {/* <ul className="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
                             <li
                               data-bs-toggle="tooltip"
                               data-popup="tooltip-custom"
@@ -151,7 +152,7 @@ const PendingBookings = () => {
                             >
                               <img src="../../assets/img/avatars/7.png" alt="Avatar" className="rounded-circle" />
                             </li>
-                          </ul>
+                          </ul> */}
                         </td>
                         <td><span className="badge bg-label-primary me-1">Active</span></td>
                         <td>
@@ -171,9 +172,10 @@ const PendingBookings = () => {
                       </tr>
                       <tr>
                         <td><i className="fa fa-user fa-lg text-info me-3"></i> <strong>194c7967-f32d-4da7-b13a-16f7427d8ec5</strong></td>
-                        <td>Barry Hunter</td>
-                        <td>
-                          <ul className="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                        <td>Liver test</td>
+                        <td> 
+                        GH₵ 200
+                          {/* <ul className="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
                             <li
                               data-bs-toggle="tooltip"
                               data-popup="tooltip-custom"
@@ -201,7 +203,7 @@ const PendingBookings = () => {
                             >
                               <img src="../../assets/img/avatars/7.png" alt="Avatar" className="rounded-circle" />
                             </li>
-                          </ul>
+                          </ul> */}
                         </td>
                         <td><span className="badge bg-label-success me-1">Completed</span></td>
                         <td>
@@ -221,9 +223,10 @@ const PendingBookings = () => {
                       </tr>
                       <tr>
                         <td><i className="fa fa-user fa-lg text-success me-3"></i> <strong>3d539ca7-a27d-4833-ade6-320e27eefb69</strong></td>
-                        <td>Trevor Baker</td>
+                        <td>Hepatitis A</td>
                         <td>
-                          <ul className="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                        GH₵ 200
+                          {/* <ul className="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
                             <li
                               data-bs-toggle="tooltip"
                               data-popup="tooltip-custom"
@@ -251,7 +254,7 @@ const PendingBookings = () => {
                             >
                               <img src="../../assets/img/avatars/7.png" alt="Avatar" className="rounded-circle" />
                             </li>
-                          </ul>
+                          </ul> */}
                         </td>
                         <td><span className="badge bg-label-info me-1">Scheduled</span></td>
                         <td>
@@ -270,9 +273,10 @@ const PendingBookings = () => {
                         <td>
                           <i className="fa fa-user fa-lg text-primary me-3"></i> <strong>09777d45-93c2-45db-9449-012e6c07fc94</strong>
                         </td>
-                        <td>Jerry Milton</td>
-                        <td>
-                          <ul className="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                        <td>Syphillis</td>
+                        <td> 
+                         GH₵ 200
+                          {/* <ul className="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
                             <li
                               data-bs-toggle="tooltip"
                               data-popup="tooltip-custom"
@@ -300,7 +304,7 @@ const PendingBookings = () => {
                             >
                               <img src="../../assets/img/avatars/7.png" alt="Avatar" className="rounded-circle" />
                             </li>
-                          </ul>
+                          </ul> */}
                         </td>
                         <td><span className="badge bg-label-warning me-1">Pending</span></td>
                         <td>
