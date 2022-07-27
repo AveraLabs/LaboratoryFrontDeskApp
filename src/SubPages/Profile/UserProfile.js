@@ -41,8 +41,8 @@ function UserProfile () {
                             alt="User avatar"
                           />
                           <div class="user-info text-center">
-                            <h5 class="mb-2">Violet Mendoza</h5>
-                            <span class="badge bg-label-secondary">Author</span>
+                            <h5 class="mb-2">Monica</h5>
+                            <span class="badge bg-label-secondary">7657c174-284e-483f-9113</span>
                           </div>
                         </div>
                       </div>
@@ -67,10 +67,10 @@ function UserProfile () {
                         <ul class="list-unstyled">
                           <li class="mb-3">
                             <span class="fw-bold me-2">Username:</span>
-                            <span>violet.dev</span>
+                            <span>Monica</span>
                           </li>
                           <li class="mb-3">
-                            <span class="fw-bold me-2">Email:</span>
+                            <span class="fw-bold me-2">Gender:</span>
                             <span>vafgot@vultukir.org</span>
                           </li>
                           <li class="mb-3">
@@ -78,14 +78,14 @@ function UserProfile () {
                             <span class="badge bg-label-success">Active</span>
                           </li>
                           <li class="mb-3">
-                            <span class="fw-bold me-2">Role:</span>
+                            <span class="fw-bold me-2">Test:</span>
                             <span>Author</span>
                           </li>
                           <li class="mb-3">
-                            <span class="fw-bold me-2">Tax id:</span>
+                            <span class="fw-bold me-2">Cost:</span>
                             <span>Tax-8965</span>
                           </li>
-                          <li class="mb-3">
+                          {/* <li class="mb-3">
                             <span class="fw-bold me-2">Contact:</span>
                             <span>(123) 456-7890</span>
                           </li>
@@ -96,7 +96,7 @@ function UserProfile () {
                           <li class="mb-3">
                             <span class="fw-bold me-2">Country:</span>
                             <span>England</span>
-                          </li>
+                          </li> */}
                         </ul>
                         <div class="d-flex justify-content-center pt-3">
                           <a

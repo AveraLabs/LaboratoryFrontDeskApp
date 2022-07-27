@@ -1,17 +1,20 @@
 import React from 'react'
+import { Menu } from '../Components/Menu';
 import Navbar from '../Components/Navbar'; 
 import Sidebar from '../Components/Sidebar';
+import { TaBbar } from '../Components/TaBbar';
 
 const CancelledAppointment = () => {
   return (
-    <div className="layout-wrapper layout-content-navbar">
+    <div className="layout-wrapper layout-content-navbar"> 
+    
     <div className="layout-container">
       {/* <!-- Menu --> */}
-          <Sidebar /> 
+          <TaBbar /> 
 
       {/* <!-- Layout container --> */}
       <div className="layout-page">
-          <Navbar />      
+          <Menu />      
          {/* <!-- / Navbar --> */}
 
          {/* <!-- Content wrapper - All Test Today --> */}

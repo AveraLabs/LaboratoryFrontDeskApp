@@ -6,4 +6,18 @@
 
 .card-contain { 
   margin-left: 30%;
-}
+} 
+
+
+
+/* @media screen and (max-width: 1097px) {
+ .space { 
+  margin-top: 0;
+ } 
+}  */
+
+@media screen and (min-width: 1388px) {
+  .space { 
+   padding-top: 59px;
+  } 
+ }

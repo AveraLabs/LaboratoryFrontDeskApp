@@ -11,12 +11,7 @@ function Navbar (){
         <div className="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
           {/* <!-- Search --> */}
           <div className="navbar-nav align-items-center">
-            {/* <div className="nav-item navbar-search-wrapper mb-0">
-              <a className="nav-item nav-link search-toggler px-0" href="javascript:void(0);">
-                <i className="bx bx-search-alt bx-sm"></i>
-                <span className="d-none d-md-inline-block text-muted">Search (Ctrl+/)</span>
-              </a>
-            </div> */}
+          
           </div>
           {/* <!-- /Search --> */}
 
