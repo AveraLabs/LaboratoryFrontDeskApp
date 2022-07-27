@@ -73,46 +73,7 @@ export const TaBbar = () => {
             <div className="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
               <ul className="navbar-nav flex-row align-items-center ms-auto">
                 {/* <!-- Language --> */}
-                <li className="nav-item dropdown-language dropdown me-2 me-xl-0">
-                  <a className="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
-                    <i className="fi fi-us fis rounded-circle fs-3 me-1"></i>
-                  </a>
-                  <ul className="dropdown-menu dropdown-menu-end">
-                    <li>
-                      <a className="dropdown-item" href="javascript:void(0);" data-language="en">
-                        <i className="fi fi-us fis rounded-circle fs-4 me-1"></i>
-                        <span className="align-middle">English</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="javascript:void(0);" data-language="fr">
-                        <i className="fi fi-fr fis rounded-circle fs-4 me-1"></i>
-                        <span className="align-middle">French</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="javascript:void(0);" data-language="de">
-                        <i className="fi fi-de fis rounded-circle fs-4 me-1"></i>
-                        <span className="align-middle">German</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="javascript:void(0);" data-language="pt">
-                        <i className="fi fi-pt fis rounded-circle fs-4 me-1"></i>
-                        <span className="align-middle">Portuguese</span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                {/* <!--/ Language --> */}
-
-                {/* <!-- Search --> */}
-                <li className="nav-item navbar-search-wrapper me-2 me-xl-0">
-                  <a className="nav-item nav-link search-toggler" href="javascript:void(0);">
-                    <i className="bx bx-search bx-sm"></i>
-                  </a>
-                </li>
-                {/* <!-- /Search --> */}
+                
 
                 {/* <!-- Style Switcher --> */}
                 <li className="nav-item me-2 me-xl-0">
