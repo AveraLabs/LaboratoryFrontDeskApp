@@ -186,7 +186,7 @@ const Login = () => {
                 <span className="input-group-text cursor-pointer"><i className="bx bx-hide"></i></span>  
                 <br/>
               </div> 
-              <p className='errors'> {passwordError} </p>
+              {/* <p className='errors'> {passwordError} </p> */}
             </div>
             <div className="mb-3">
             
