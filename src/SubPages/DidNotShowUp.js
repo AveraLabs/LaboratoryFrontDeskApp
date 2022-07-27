@@ -1,17 +1,17 @@
 import React from 'react'
-import Navbar from '../Components/Navbar'; 
-import Sidebar from '../Components/Sidebar'; 
+import { Menu } from '../Components/Menu';
+import { TaBbar } from '../Components/TaBbar';
 
 const DidNotShowUp = () => {
   return (
     <div className="layout-wrapper layout-content-navbar">
     <div className="layout-container">
       {/* <!-- Menu --> */}
-          <Sidebar /> 
+          <TaBbar /> 
 
       {/* <!-- Layout container --> */}
       <div className="layout-page">
-          <Navbar />      
+          <Menu />      
          {/* <!-- / Navbar --> */}
 
          {/* <!-- Content wrapper - All Test Today --> */}

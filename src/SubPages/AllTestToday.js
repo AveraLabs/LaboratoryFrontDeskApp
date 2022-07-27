@@ -1,18 +1,20 @@
 import React from 'react';
+import { Menu } from '../Components/Menu';
 
 import Navbar from '../Components/Navbar'; 
 import Sidebar from '../Components/Sidebar';
+import { TaBbar } from '../Components/TaBbar';
 
 function AllTestToday() {
     return (
       // <!-- Layout wrapper -->
-      <div className="layout-wrapper layout-content-navbar">
+      <div className="layout-wrapper layout-navbar-full layout-horizontal layout-without-menu">
         <div className="layout-container">
-          {/* <!-- Menu --> */}
-              <Sidebar />  
-          {/* <!-- Layout container --> */}
+        
+           <TaBbar />  
+         
           <div className="layout-page">
-              <Navbar />      
+              <Menu />      
              {/* <!-- / Navbar --> */}
   
              {/* <!-- Content wrapper - All Test Today --> */}
@@ -20,84 +22,7 @@ function AllTestToday() {
               {/* <!-- Content --> */}
   
               <div className="container-xxl flex-grow-1 container-p-y">
-                {/* <div className="row g-4 mb-4">
-                  <div className="col-sm-6 col-xl-3">
-                    <div className="card">
-                      <div className="card-body">
-                        <div className="d-flex align-items-start justify-content-between">
-                          <div className="content-left">
-                            <span>Current Tests</span>
-                            <div className="d-flex align-items-end mt-2">
-                              <h4 className="mb-0 me-2">21,459</h4>
-                              <small className="text-success">(+29%)</small>
-                            </div>
-                            <small>Total Users</small>
-                          </div>
-                          <span className="badge bg-label-primary rounded p-2">
-                            <i className="bx bx-user bx-sm"></i>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-sm-6 col-xl-3">
-                    <div className="card">
-                      <div className="card-body">
-                        <div className="d-flex align-items-start justify-content-between">
-                          <div className="content-left">
-                            <span>Pending Tests</span>
-                            <div className="d-flex align-items-end mt-2">
-                              <h4 className="mb-0 me-2">4,567</h4>
-                              <small className="text-success">(+18%)</small>
-                            </div>
-                            <small>Last week analytics </small>
-                          </div>
-                          <span className="badge bg-label-danger rounded p-2">
-                            <i className="bx bx-user-plus bx-sm"></i>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-sm-6 col-xl-3">
-                    <div className="card">
-                      <div className="card-body">
-                        <div className="d-flex align-items-start justify-content-between">
-                          <div className="content-left">
-                            <span>Today's tests</span>
-                            <div className="d-flex align-items-end mt-2">
-                              <h4 className="mb-0 me-2">19,860</h4>
-                              <small className="text-danger">(-14%)</small>
-                            </div>
-                            <small>Last week analytics</small>
-                          </div>
-                          <span className="badge bg-label-success rounded p-2">
-                            <i className="bx bx-group bx-sm"></i>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-sm-6 col-xl-3">
-                    <div className="card">
-                      <div className="card-body">
-                        <div className="d-flex align-items-start justify-content-between">
-                          <div className="content-left">
-                            <span>All tests</span>
-                            <div className="d-flex align-items-end mt-2">
-                              <h4 className="mb-0 me-2">237</h4>
-                              <small className="text-success">(+42%)</small>
-                            </div>
-                            <small>Last week analytics</small>
-                          </div>
-                          <span className="badge bg-label-warning rounded p-2">
-                            <i className="bx bx-user-voice bx-sm"></i>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
+           
                 {/* <!-- Users List Table --> */} 
                 
                 <div className="card">
@@ -119,35 +44,7 @@ function AllTestToday() {
                         <td>Blood test</td>
                         <td> 
                         GH₵ 200
-                          {/* <ul className="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Lilian Fuller"
-                            >
-                              <img src="../../assets/img/avatars/5.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Sophia Wilkerson"
-                            >
-                              <img src="../../assets/img/avatars/6.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Christina Parker"
-                            >
-                              <img src="../../assets/img/avatars/7.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                          </ul> */}
+                        
                         </td>
                         <td><span className="badge bg-label-primary me-1">Active</span></td>
                         <td>

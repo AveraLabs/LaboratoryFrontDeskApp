@@ -2,29 +2,30 @@ import React from 'react'
 import Navbar from '../Components/Navbar'; 
 import Sidebar from '../Components/Sidebar';
 import {Link} from 'react-router-dom';
+import { TaBbar } from '../Components/TaBbar';
+import { Menu } from '../Components/Menu';
 
 const PendingBookings = () => {
   return (
 
       // <!-- Layout wrapper -->
-      <div className="layout-wrapper layout-content-navbar">
-        <div className="layout-container">
-          {/* <!-- Menu --> */} 
-              <Sidebar /> 
+      <div className="layout-wrapper layout-horizontal layout-without-menu layout-navbar-full">
 
-          {/* <!-- Layout container --> */}
-          <div className="layout-page">
-            {/* <!-- Navbar --> */}
-              <Navbar />      
+        <div className="layout-container">
+             
+           {/* <!-- Navbar --> */}
+           <TaBbar/>     
             {/* <!-- / Navbar --> */}
+          {/* <!-- Layout container --> */}
+       <div className="layout-page">
     
-    <div className="content-wrapper"> 
+       <div className="content-wrapper"> 
          {/* <!-- Content wrapper - Pending Bookings --> */} 
-      
+            <Menu/>
          {/* <!-- Content --> */}
 
-      <div className="container-xxl flex-grow-1 container-p-y">
-        <div className="row g-4 mb-4">
+       <div className="container-xxl flex-grow-1 container-p-y">
+         <div className="row g-4 mb-4">
           <div className="col-sm-6 col-xl-3">
             <div className="card">
               <div className="card-body">
@@ -124,35 +125,7 @@ const PendingBookings = () => {
                         <td>Blood test</td>
                         <td> 
                         GH₵ 200
-                          {/* <ul className="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Lilian Fuller"
-                            >
-                              <img src="../../assets/img/avatars/5.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Sophia Wilkerson"
-                            >
-                              <img src="../../assets/img/avatars/6.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Christina Parker"
-                            >
-                              <img src="../../assets/img/avatars/7.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                          </ul> */}
+                       
                         </td>
                         <td><span className="badge bg-label-primary me-1">Active</span></td>
                         <td>
@@ -162,7 +135,7 @@ const PendingBookings = () => {
                             </button>
                             <div className="dropdown-menu">
                               <a className="dropdown-item" href="/userprofile"
-                                ><i className="bx bx-show"></i>View</a>
+                                ><i className="bx bx-show me-2"></i> View </a>
                               {/* <a className="dropdown-item" href="javascript:void(0);"
                                 ><i className="bx bx-trash me-1"></i> Delete</a
                               > */}
@@ -175,35 +148,7 @@ const PendingBookings = () => {
                         <td>Liver test</td>
                         <td> 
                         GH₵ 200
-                          {/* <ul className="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Lilian Fuller"
-                            >
-                              <img src="../../assets/img/avatars/5.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Sophia Wilkerson"
-                            >
-                              <img src="../../assets/img/avatars/6.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Christina Parker"
-                            >
-                              <img src="../../assets/img/avatars/7.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                          </ul> */}
+                         
                         </td>
                         <td><span className="badge bg-label-success me-1">Completed</span></td>
                         <td>
@@ -213,7 +158,7 @@ const PendingBookings = () => {
                             </button>
                             <div className="dropdown-menu">
                               <a className="dropdown-item" href="/userprofile"
-                                ><i className="bx bx-show"></i> View </a>
+                                ><i className="bx bx-show me-2"></i> View </a>
                               {/* <a className="dropdown-item" href="javascript:void(0);"
                                 ><i className="bx bx-trash me-2"></i> Delete</a
                               > */}
@@ -226,35 +171,7 @@ const PendingBookings = () => {
                         <td>Hepatitis A</td>
                         <td>
                         GH₵ 200
-                          {/* <ul className="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Lilian Fuller"
-                            >
-                              <img src="../../assets/img/avatars/5.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Sophia Wilkerson"
-                            >
-                              <img src="../../assets/img/avatars/6.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Christina Parker"
-                            >
-                              <img src="../../assets/img/avatars/7.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                          </ul> */}
+                        
                         </td>
                         <td><span className="badge bg-label-info me-1">Scheduled</span></td>
                         <td>
@@ -264,7 +181,7 @@ const PendingBookings = () => {
                             </button>
                             <div className="dropdown-menu">
                               <a className="dropdown-item" href="/userprofile"
-                                ><i className="bx bx-show"></i> View</a>
+                                ><i className="bx bx-show me-2"></i> View</a>
                             </div>
                           </div>
                         </td>
@@ -327,37 +244,7 @@ const PendingBookings = () => {
       {/* <!-- / Content --> */}
 
       {/* <!-- Footer --> */}
-      {/* <footer className="content-footer footer bg-footer-theme">
-        <div className="container-fluid d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-          <div className="mb-2 mb-md-0">
-            ©
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            , made with ❤️ by
-            <a href="https://pixinvent.com" target="_blank" className="footer-link fw-semibold">PIXINVENT</a>
-          </div>
-          <div>
-            <a href="https://themeforest.net/licenses/standard" className="footer-link me-4" target="_blank"
-              >License</a
-            >
-            <a href="https://1.envato.market/pixinvent_portfolio" target="_blank" className="footer-link me-4"
-              >More Themes</a
-            >
-
-            <a
-              href="https://pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/documentation-bs5/"
-              target="_blank"
-              className="footer-link me-4"
-              >Documentation</a
-            >
-
-            <a href="https://pixinvent.ticksy.com/" target="_blank" className="footer-link d-none d-sm-inline-block"
-              >Support</a
-            >
-          </div>
-        </div>
-      </footer> */}
+    
       {/* <!-- / Footer --> */}
 
       <div className="content-backdrop fade"></div> 
