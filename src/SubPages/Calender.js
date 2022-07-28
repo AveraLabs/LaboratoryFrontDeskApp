@@ -20,11 +20,9 @@ const Calender = () => {
              {/* <!-- Content wrapper - Calender --> */}
              <div className="content-wrapper main-session"> 
 
-             
-
             {/* <!-- Content --> */}
                
-            <div className="container-xxl flex-grow-1 container-p-y">
+            <div className="container-xxl flex-grow-1 container-p-y mt-5">
               <div className="card app-calendar-wrapper">
                 <div className="row g-0">
                   {/* <!-- Calendar Sidebar --> */}

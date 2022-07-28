@@ -19,13 +19,12 @@ function AllTestToday() {
             <div className="content-wrapper main-session">
               {/* <!-- Content --> */}
                   
-              <div className="container-xxl flex-grow-1 container-p-y">
+              <div className="container-xxl flex-grow-1 container-p-y mt-5">
            
                 {/* <!-- Users List Table --> */} 
-                
                 <div className="card">
-                <h5 className="card-header">All tests Today</h5>
-                <div className="table-responsive text-nowrap">
+                 <h5 className="card-header">All tests Today</h5>
+                 <div className="table-responsive text-nowrap">
                   <table className="table">
                     <thead>
                       <tr>

@@ -17,7 +17,7 @@ const CancelledAppointment = () => {
        <Menu />
       <div className="content-wrapper main-session"> 
        
-       <div className="container-xxl flex-grow-1 container-p-y">   
+       <div className="container-xxl flex-grow-1 container-p-y mt-5">   
 
          <div className="card">
                 <h5 className="card-header"> Cancelled Appointment </h5>

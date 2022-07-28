@@ -20,12 +20,12 @@
  }
 
  .main-session { 
-   margin: 130px;
+   margin: 120px;
  } 
  
 } 
 
-@media screen and (max-width: 1209px) {
+@media screen and (max-width: 1205px) {
   .tab-menu { 
     display: none;
   }
