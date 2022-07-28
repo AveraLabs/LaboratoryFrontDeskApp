@@ -14,11 +14,9 @@ const CancelledAppointment = () => {
      <TabBar/>     
     
     <div className="layout-page">
-
-      <div className="content-wrapper"> 
+       <Menu />
+      <div className="content-wrapper main-session"> 
        
-        <Menu/>
-
        <div className="container-xxl flex-grow-1 container-p-y">   
 
          <div className="card">

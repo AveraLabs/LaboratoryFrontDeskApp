@@ -11,16 +11,16 @@ const Calender = () => {
 
         {/* <!-- Layout container --> */}
         <div className="layout-container"> 
-        
+
           {/* <!-- Menu --> */}
               <TabBar /> 
         
           <div className="layout-page">
-  
+              <Menu />
              {/* <!-- Content wrapper - Calender --> */}
-             <div className="content-wrapper"> 
+             <div className="content-wrapper main-session"> 
 
-               <Menu />
+             
 
             {/* <!-- Content --> */}
                

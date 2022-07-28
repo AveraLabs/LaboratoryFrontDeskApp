@@ -14,11 +14,11 @@ function AllTestToday() {
            <TabBar />  
          
           <div className="layout-page">
-  
+                 <Menu />
              {/* <!-- Content wrapper - All Test Today --> */}
-            <div className="content-wrapper">
+            <div className="content-wrapper main-session">
               {/* <!-- Content --> */}
-                 <Menu />   
+                  
               <div className="container-xxl flex-grow-1 container-p-y">
            
                 {/* <!-- Users List Table --> */} 

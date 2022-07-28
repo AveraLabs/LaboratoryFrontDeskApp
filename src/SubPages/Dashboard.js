@@ -1,30 +1,28 @@
 import React from 'react' 
-import Navbar from '../Components/Navbar'; 
-import Sidebar from '../Components/Sidebar';
-import {Link} from 'react-router-dom';
 import { TabBar } from '../Components/TaBbar';
 import { Menu } from '../Components/Menu';
 
 const PendingBookings = () => {
   return (
-
       // <!-- Layout wrapper -->
+      
       <div className="layout-wrapper layout-horizontal layout-without-menu layout-navbar-full">
          
           {/* <!-- Layout container --> */}
         <div className="layout-container">
-           {/* <!-- Navbar --> */}
-           <TabBar/>     
-            {/* <!-- / Navbar --> */}
+         
+          <TabBar/>     
          
        <div className="layout-page">
-    
-       <div className="content-wrapper"> 
-         {/* <!-- Content wrapper - Pending Bookings --> */} 
-            <Menu/>
+          <Menu/>
+       
+        <div className="content-wrapper main-session  <Menu />"> 
+        
+         {/* <!--  Pending Bookings --> */} 
+         
          {/* <!-- Content --> */}
 
-       <div className="container-xxl flex-grow-1 container-p-y">
+        <div className="container-xxl flex-grow-1 container-p-y">
        
          <div className="row g-4 mb-4"> 
           <div className="col-sm-6 col-xl-3">
@@ -262,6 +260,7 @@ const PendingBookings = () => {
         <div className="drag-target"></div> 
 
       </div> 
+    
   )
 }
  

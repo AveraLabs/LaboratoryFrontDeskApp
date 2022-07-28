@@ -1,16 +1,17 @@
 import React from 'react'
 
 export const Menu = () => {
+
   return (
     
- <aside id="layout-menu" className="layout-menu-horizontal menu-horizontal menu bg-menu-theme flex-grow-0">
-    <div className="container-xxl d-flex h-100 space">
+ <aside id="layout-menu" className="tab-menu layout-menu-horizontal menu-horizontal menu bg-menu-theme flex-grow-0">
+    <div className="container-xxl d-flex h-100 container-tabs">
       <ul className="menu-inner">
         {/* <!-- Dashboards --> */}
         <li className="menu-item active">
           <a href="/frontdesk" className="menu-link">
             <i className="menu-icon tf-icons bx bx-home-circle"></i>
-            <div data-i18n="Dashboards">Dashboards</div>
+            <div data-i18n="Dashboard">Dashboard</div>
           </a>
         </li>
 

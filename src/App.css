@@ -1,5 +1,5 @@
 .errors {
-  color: #cf1212; 
+  color: #e20e0e; 
   font-size: 13px;
   transition: .3s;
 } 
@@ -9,15 +9,24 @@
 } 
 
 
+@media screen and (min-width: 1212px) {
+ .tab-menu { 
+  position: fixed;
+  top: 50px;
+ }  
 
-/* @media screen and (max-width: 1097px) {
- .space { 
-  margin-top: 0;
+ .container-tabs { 
+   padding-top: 14px
+ }
+
+ .main-session { 
+   margin: 130px;
  } 
-}  */
+ 
+} 
 
-@media screen and (min-width: 1388px) {
-  .space { 
-   padding-top: 59px;
-  } 
+@media screen and (max-width: 1209px) {
+  .tab-menu { 
+    display: none;
+  }
  }

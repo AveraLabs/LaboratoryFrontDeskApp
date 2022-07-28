@@ -13,11 +13,11 @@ const DidNotShowUp = () => {
        <TabBar/>     
     
     <div className="layout-page">
+       <Menu/>
 
-      <div className="content-wrapper"> 
+      <div className="content-wrapper main-session"> 
        
-        <Menu/>
-
+      
        <div className="container-xxl flex-grow-1 container-p-y">   
 
        <div className="card">

@@ -448,7 +448,7 @@ export const TabBar = () => {
                       <div className="dropdown-divider"></div>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="pages-profile-user.html">
+                      <a className="dropdown-item" href="/userprofile">
                         <i className="bx bx-user me-2"></i>
                         <span className="align-middle">My Profile</span>
                       </a>
@@ -459,15 +459,7 @@ export const TabBar = () => {
                         <span className="align-middle">Settings</span>
                       </a>
                     </li>
-                    <li>
-                      <a className="dropdown-item" href="pages-account-settings-billing.html">
-                        <span className="d-flex align-items-center align-middle">
-                          <i className="flex-shrink-0 bx bx-credit-card me-2"></i>
-                          <span className="flex-grow-1 align-middle">Billing</span>
-                          <span className="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
-                        </span>
-                      </a>
-                    </li>
+               
                     <li>
                       <div className="dropdown-divider"></div>
                     </li>
@@ -477,18 +469,8 @@ export const TabBar = () => {
                         <span className="align-middle">Help</span>
                       </a>
                     </li>
-                    <li>
-                      <a className="dropdown-item" href="pages-faq.html">
-                        <i className="bx bx-help-circle me-2"></i>
-                        <span className="align-middle">FAQ</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="pages-pricing.html">
-                        <i className="bx bx-dollar me-2"></i>
-                        <span className="align-middle">Pricing</span>
-                      </a>
-                    </li>
+                   
+                    
                     <li>
                       <div className="dropdown-divider"></div>
                     </li>
