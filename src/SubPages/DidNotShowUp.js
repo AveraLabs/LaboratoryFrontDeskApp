@@ -1,25 +1,27 @@
 import React from 'react'
 import { Menu } from '../Components/Menu';
-import { TaBbar } from '../Components/TaBbar';
+import { TabBar } from '../Components/TaBbar';
 
 const DidNotShowUp = () => {
-  return (
-    <div className="layout-wrapper layout-content-navbar">
-    <div className="layout-container">
-      {/* <!-- Menu --> */}
-          <TaBbar /> 
-
+  return ( 
+    
+  <div className="layout-wrapper layout-horizontal layout-without-menu layout-navbar-full">
+         
       {/* <!-- Layout container --> */}
-      <div className="layout-page">
-          <Menu />      
-         {/* <!-- / Navbar --> */}
+    <div className="layout-container">
+     
+       <TabBar/>     
+    
+    <div className="layout-page">
 
-         {/* <!-- Content wrapper - All Test Today --> */}
-         <div className="content-wrapper">
-        {/* <!-- Content --> */}
+      <div className="content-wrapper"> 
+       
+        <Menu/>
 
-        <div className="card">
-                <h5 className="card-header">Pending Bookings</h5>
+       <div className="container-xxl flex-grow-1 container-p-y">   
+
+       <div className="card">
+                <h5 className="card-header">Did not show up</h5>
                 <div className="table-responsive text-nowrap">
                   <table className="table">
                     <thead>
@@ -37,35 +39,7 @@ const DidNotShowUp = () => {
                         <td>Blood test</td>
                         <td> 
                         GH₵ 200
-                          {/* <ul className="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Lilian Fuller"
-                            >
-                              <img src="../../assets/img/avatars/5.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Sophia Wilkerson"
-                            >
-                              <img src="../../assets/img/avatars/6.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Christina Parker"
-                            >
-                              <img src="../../assets/img/avatars/7.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                          </ul> */}
+                       
                         </td>
                         <td><span className="badge bg-label-primary me-1">Active</span></td>
                         <td>
@@ -75,10 +49,8 @@ const DidNotShowUp = () => {
                             </button>
                             <div className="dropdown-menu">
                               <a className="dropdown-item" href="/userprofile"
-                                ><i className="bx bx-show"></i>View</a>
-                              {/* <a className="dropdown-item" href="javascript:void(0);"
-                                ><i className="bx bx-trash me-1"></i> Delete</a
-                              > */}
+                                ><i className="bx bx-show me-2"></i> View </a>
+                             
                             </div>
                           </div>
                         </td>
@@ -88,35 +60,7 @@ const DidNotShowUp = () => {
                         <td>Liver test</td>
                         <td> 
                         GH₵ 200
-                          {/* <ul className="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Lilian Fuller"
-                            >
-                              <img src="../../assets/img/avatars/5.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Sophia Wilkerson"
-                            >
-                              <img src="../../assets/img/avatars/6.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Christina Parker"
-                            >
-                              <img src="../../assets/img/avatars/7.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                          </ul> */}
+                         
                         </td>
                         <td><span className="badge bg-label-success me-1">Completed</span></td>
                         <td>
@@ -126,10 +70,8 @@ const DidNotShowUp = () => {
                             </button>
                             <div className="dropdown-menu">
                               <a className="dropdown-item" href="/userprofile"
-                                ><i className="bx bx-show"></i> View </a>
-                              {/* <a className="dropdown-item" href="javascript:void(0);"
-                                ><i className="bx bx-trash me-2"></i> Delete</a
-                              > */}
+                                ><i className="bx bx-show me-2"></i> View </a>
+                              
                             </div>
                           </div>
                         </td>
@@ -139,35 +81,7 @@ const DidNotShowUp = () => {
                         <td>Hepatitis A</td>
                         <td>
                         GH₵ 200
-                          {/* <ul className="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Lilian Fuller"
-                            >
-                              <img src="../../assets/img/avatars/5.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Sophia Wilkerson"
-                            >
-                              <img src="../../assets/img/avatars/6.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Christina Parker"
-                            >
-                              <img src="../../assets/img/avatars/7.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                          </ul> */}
+                        
                         </td>
                         <td><span className="badge bg-label-info me-1">Scheduled</span></td>
                         <td>
@@ -177,7 +91,7 @@ const DidNotShowUp = () => {
                             </button>
                             <div className="dropdown-menu">
                               <a className="dropdown-item" href="/userprofile"
-                                ><i className="bx bx-show"></i> View</a>
+                                ><i className="bx bx-show me-2"></i> View</a>
                             </div>
                           </div>
                         </td>
@@ -189,35 +103,7 @@ const DidNotShowUp = () => {
                         <td>Syphillis</td>
                         <td> 
                          GH₵ 200
-                          {/* <ul className="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Lilian Fuller"
-                            >
-                              <img src="../../assets/img/avatars/5.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Sophia Wilkerson"
-                            >
-                              <img src="../../assets/img/avatars/6.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Christina Parker"
-                            >
-                              <img src="../../assets/img/avatars/7.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                          </ul> */}
+                       
                         </td>
                         <td><span className="badge bg-label-warning me-1">Pending</span></td>
                         <td>
@@ -235,27 +121,16 @@ const DidNotShowUp = () => {
                     </tbody>
                   </table>
                 </div>
-        </div>
-        {/* <!-- / Content --> */}
+              </div>
+       </div>  
+     </div>  
 
-        {/* <!-- Footer --> */}
-      
-        {/* <!-- / Footer --> */}
+   </div> 
 
-        <div className="content-backdrop fade"></div>
-      </div>
-        {/* <!-- Content wrapper --> */}
-      </div>
-      {/* <!-- / Layout page --> */}
-    </div>
+  </div> 
 
-    {/* <!-- Overlay --> */}
-    <div className="layout-overlay layout-menu-toggle"></div>
-
-    {/* <!-- Drag Target Area To SlideIn Menu On Small Screens --> */}
-    <div className="drag-target"></div>
   </div>
-  )
+  );
 }
 
 export default DidNotShowUp;

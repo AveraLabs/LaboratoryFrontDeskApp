@@ -1,23 +1,29 @@
 import Navbar from '../Components/Navbar'; 
-import Sidebar from '../Components/Sidebar';
+
+import { Menu } from '../Components/Menu';
+
+import { TabBar } from '../Components/TaBbar';
 
 const Calender = () => {
   return ( 
-      // <!-- Layout wrapper -->
-      <div className="layout-wrapper layout-content-navbar">
-        <div className="layout-container">
+   
+      <div className="layout-wrapper layout-horizontal layout-navbar-full layout-without-menu"> 
+
+        {/* <!-- Layout container --> */}
+        <div className="layout-container"> 
+        
           {/* <!-- Menu --> */}
-              <Sidebar /> 
-
-          {/* <!-- Layout container --> */}
+              <TabBar /> 
+        
           <div className="layout-page">
-              <Navbar />      
-             {/* <!-- / Navbar --> */}
   
-             {/* <!-- Content wrapper - All Test Today --> */}
-             <div className="content-wrapper">
-            {/* <!-- Content --> */}
+             {/* <!-- Content wrapper - Calender --> */}
+             <div className="content-wrapper"> 
 
+               <Menu />
+
+            {/* <!-- Content --> */}
+               
             <div className="container-xxl flex-grow-1 container-p-y">
               <div className="card app-calendar-wrapper">
                 <div className="row g-0">
@@ -257,41 +263,7 @@ const Calender = () => {
                 </div>
               </div>
             </div>
-            {/* <!-- / Content --> */}
-
-            {/* <!-- Footer --> */}
-            <footer className="content-footer footer bg-footer-theme">
-              <div className="container-fluid d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-                <div className="mb-2 mb-md-0">
-                  ©
-                  <script>
-                    document.write(new Date().getFullYear());
-                  </script>
-                  , made with ❤️ by
-                  <a href="https://pixinvent.com" target="_blank" className="footer-link fw-semibold">PIXINVENT</a>
-                </div>
-                <div>
-                  <a href="https://themeforest.net/licenses/standard" className="footer-link me-4" target="_blank"
-                    >License</a
-                  >
-                  <a href="https://1.envato.market/pixinvent_portfolio" target="_blank" className="footer-link me-4"
-                    >More Themes</a
-                  >
-
-                  <a
-                    href="https://pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/documentation-bs5/"
-                    target="_blank"
-                    className="footer-link me-4"
-                    >Documentation</a
-                  >
-
-                  <a href="https://pixinvent.ticksy.com/" target="_blank" className="footer-link d-none d-sm-inline-block"
-                    >Support</a
-                  >
-                </div>
-              </div>
-            </footer>
-            {/* <!-- / Footer --> */}
+            {/* <!-- / Content --> */}  {/* <!-- Layout container --> */}   
 
             <div className="content-backdrop fade"></div>
           </div>

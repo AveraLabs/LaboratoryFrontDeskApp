@@ -23,7 +23,7 @@ function App() {
         <Route path='userprofile' element={<UserProfile />} />
         <Route path="didnotshowup" element={<DidNotShowUp />} /> 
         <Route path="cancelledappointment" element={<CancelledAppointment />} /> 
-        <Route path="calendar" element={<Calender />} /> 
+        <Route path="calender" element={<Calender />} /> 
      </Routes>
     </BrowserRouter>
   );

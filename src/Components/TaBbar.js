@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const TaBbar = () => {
+export const TabBar = () => {
   return (
     <nav className="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme" id="layout-navbar">
           <div className="container-xxl">
@@ -438,8 +438,8 @@ export const TaBbar = () => {
                             </div>
                           </div>
                           <div className="flex-grow-1">
-                            <span className="fw-semibold d-block lh-1">John Doe</span>
-                            <small>Admin</small>
+                            <span className="fw-semibold d-block lh-1">John</span>
+                            <small>Front Desk</small>
                           </div>
                         </div>
                       </a>

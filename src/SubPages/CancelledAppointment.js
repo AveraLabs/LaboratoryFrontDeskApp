@@ -1,28 +1,28 @@
 import React from 'react'
 import { Menu } from '../Components/Menu';
-import Navbar from '../Components/Navbar'; 
-import Sidebar from '../Components/Sidebar';
-import { TaBbar } from '../Components/TaBbar';
+import { TabBar } from '../Components/TaBbar';
 
 const CancelledAppointment = () => {
-  return (
-    <div className="layout-wrapper layout-content-navbar"> 
+  return ( 
     
+  <div className="layout-wrapper layout-horizontal layout-without-menu layout-navbar-full">
+         
+    {/* <!-- Layout container --> */} 
+
     <div className="layout-container">
-      {/* <!-- Menu --> */}
-          <TaBbar /> 
+     
+     <TabBar/>     
+    
+    <div className="layout-page">
 
-      {/* <!-- Layout container --> */}
-      <div className="layout-page">
-          <Menu />      
-         {/* <!-- / Navbar --> */}
+      <div className="content-wrapper"> 
+       
+        <Menu/>
 
-         {/* <!-- Content wrapper - All Test Today --> */}
-         <div className="content-wrapper">
-        {/* <!-- Content --> */}
+       <div className="container-xxl flex-grow-1 container-p-y">   
 
-        <div className="card">
-                <h5 className="card-header">Pending Bookings</h5>
+         <div className="card">
+                <h5 className="card-header"> Cancelled Appointment </h5>
                 <div className="table-responsive text-nowrap">
                   <table className="table">
                     <thead>
@@ -36,38 +36,11 @@ const CancelledAppointment = () => {
                     </thead>
                     <tbody className="table-border-bottom-0">
                       <tr>
-                        <td><i className="fab fa-angular fa-lg text-danger me-3"></i> <strong>Angular Project</strong></td>
-                        <td>Albert Cook</td>
-                        <td>
-                          <ul className="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Lilian Fuller"
-                            >
-                              <img src="../../assets/img/avatars/5.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Sophia Wilkerson"
-                            >
-                              <img src="../../assets/img/avatars/6.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Christina Parker"
-                            >
-                              <img src="../../assets/img/avatars/7.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                          </ul>
+                        <td><i className="fa fa-user fa-lg text-danger me-3"></i> <strong>7657c174-284e-483f-9113-948e9128cf9c</strong></td>
+                        <td>Blood test</td>
+                        <td> 
+                        GH₵ 200
+                       
                         </td>
                         <td><span className="badge bg-label-primary me-1">Active</span></td>
                         <td>
@@ -77,47 +50,18 @@ const CancelledAppointment = () => {
                             </button>
                             <div className="dropdown-menu">
                               <a className="dropdown-item" href="/userprofile"
-                                ><i className="bx bx-show"></i>View</a>
-                              {/* <a className="dropdown-item" href="javascript:void(0);"
-                                ><i className="bx bx-trash me-1"></i> Delete</a
-                              > */}
+                                ><i className="bx bx-show me-2"></i> View </a>
+                             
                             </div>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td><i className="fab fa-react fa-lg text-info me-3"></i> <strong>React Project</strong></td>
-                        <td>Barry Hunter</td>
-                        <td>
-                          <ul className="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Lilian Fuller"
-                            >
-                              <img src="../../assets/img/avatars/5.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Sophia Wilkerson"
-                            >
-                              <img src="../../assets/img/avatars/6.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Christina Parker"
-                            >
-                              <img src="../../assets/img/avatars/7.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                          </ul>
+                        <td><i className="fa fa-user fa-lg text-info me-3"></i> <strong>194c7967-f32d-4da7-b13a-16f7427d8ec5</strong></td>
+                        <td>Liver test</td>
+                        <td> 
+                        GH₵ 200
+                         
                         </td>
                         <td><span className="badge bg-label-success me-1">Completed</span></td>
                         <td>
@@ -127,47 +71,18 @@ const CancelledAppointment = () => {
                             </button>
                             <div className="dropdown-menu">
                               <a className="dropdown-item" href="/userprofile"
-                                ><i className="bx bx-show"></i> View </a>
-                              {/* <a className="dropdown-item" href="javascript:void(0);"
-                                ><i className="bx bx-trash me-2"></i> Delete</a
-                              > */}
+                                ><i className="bx bx-show me-2"></i> View </a>
+                              
                             </div>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td><i className="fab fa-vuejs fa-lg text-success me-3"></i> <strong>VueJs Project</strong></td>
-                        <td>Trevor Baker</td>
+                        <td><i className="fa fa-user fa-lg text-success me-3"></i> <strong>3d539ca7-a27d-4833-ade6-320e27eefb69</strong></td>
+                        <td>Hepatitis A</td>
                         <td>
-                          <ul className="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Lilian Fuller"
-                            >
-                              <img src="../../assets/img/avatars/5.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Sophia Wilkerson"
-                            >
-                              <img src="../../assets/img/avatars/6.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Christina Parker"
-                            >
-                              <img src="../../assets/img/avatars/7.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                          </ul>
+                        GH₵ 200
+                        
                         </td>
                         <td><span className="badge bg-label-info me-1">Scheduled</span></td>
                         <td>
@@ -177,46 +92,19 @@ const CancelledAppointment = () => {
                             </button>
                             <div className="dropdown-menu">
                               <a className="dropdown-item" href="/userprofile"
-                                ><i className="bx bx-show"></i> View</a>
+                                ><i className="bx bx-show me-2"></i> View</a>
                             </div>
                           </div>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <i className="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Bootstrap Project</strong>
+                          <i className="fa fa-user fa-lg text-primary me-3"></i> <strong>09777d45-93c2-45db-9449-012e6c07fc94</strong>
                         </td>
-                        <td>Jerry Milton</td>
-                        <td>
-                          <ul className="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Lilian Fuller"
-                            >
-                              <img src="../../assets/img/avatars/5.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Sophia Wilkerson"
-                            >
-                              <img src="../../assets/img/avatars/6.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Christina Parker"
-                            >
-                              <img src="../../assets/img/avatars/7.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                          </ul>
+                        <td>Syphillis</td>
+                        <td> 
+                         GH₵ 200
+                       
                         </td>
                         <td><span className="badge bg-label-warning me-1">Pending</span></td>
                         <td>
@@ -234,23 +122,16 @@ const CancelledAppointment = () => {
                     </tbody>
                   </table>
                 </div>
-        </div>
-        {/* <!-- / Content --> */}
+              </div>
+       </div>  
+     </div>  
 
-        <div className="content-backdrop fade"></div>
-      </div>
-        {/* <!-- Content wrapper --> */}
-      </div>
-      {/* <!-- / Layout page --> */}
-    </div>
+   </div> 
 
-    {/* <!-- Overlay --> */}
-    <div className="layout-overlay layout-menu-toggle"></div>
+  </div> 
 
-    {/* <!-- Drag Target Area To SlideIn Menu On Small Screens --> */}
-    <div className="drag-target"></div>
   </div>
-  )
+  );
 }
- 
+
 export default CancelledAppointment;

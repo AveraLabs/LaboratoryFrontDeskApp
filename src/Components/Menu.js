@@ -7,8 +7,8 @@ export const Menu = () => {
     <div className="container-xxl d-flex h-100 space">
       <ul className="menu-inner">
         {/* <!-- Dashboards --> */}
-        <li className="menu-item">
-          <a href="javascript:void(0)" className="menu-link">
+        <li className="menu-item active">
+          <a href="/frontdesk" className="menu-link">
             <i className="menu-icon tf-icons bx bx-home-circle"></i>
             <div data-i18n="Dashboards">Dashboards</div>
           </a>
@@ -16,15 +16,15 @@ export const Menu = () => {
 
         {/* <!-- Layouts --> */}
         <li className="menu-item">
-          <a href="javascript:void(0)" className="menu-link">
+          <a href="/allteststoday" className="menu-link">
             <i className="menu-icon tf-icons bx bx-layout"></i>
             <div data-i18n="All tests today">All tests today</div>
           </a>
         </li>
 
         {/* <!-- Apps --> */}
-        <li className="menu-item active">
-          <a href="javascript:void(0)" className="menu-link">
+        <li className="menu-item">
+          <a href="/didnotshowup" className="menu-link">
             <i className="menu-icon tf-icons bx bx-customize"></i>
             <div data-i18n="Did not show up">Did not show up</div>
           </a>
@@ -33,7 +33,7 @@ export const Menu = () => {
 
         {/* <!-- Pages --> */}
         <li className="menu-item">
-          <a href="javascript:void(0)" className="menu-link">
+          <a href="/cancelledappointment" className="menu-link">
             <i className="menu-icon tf-icons bx bx-collection"></i>
             <div data-i18n="Cancelled Appointment">Cancelled Appointment</div>
           </a>
@@ -42,15 +42,14 @@ export const Menu = () => {
 
         {/* <!-- Components --> */}
         <li className="menu-item">
-          <a href="javascript:void(0)" className="menu-link">
+          <a href="/calender" className="menu-link">
             <i className="menu-icon tf-icons bx bx-code-block"></i>
             <div data-i18n="Calender">Calender</div>
           </a>
          
         </li>
-
       </ul>
     </div>
   </aside>
-  )
+  );
 }
