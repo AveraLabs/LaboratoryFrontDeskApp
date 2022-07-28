@@ -1,24 +1,25 @@
 import React from 'react' 
 import Navbar from '../../Components/Navbar'; 
-import Sidebar from '../../Components/Sidebar';
+import {Menu} from '../../Components/Menu';
+import { TabBar } from '../../Components/TaBbar';
 
 
 function UserProfile () {
   return ( 
-    <div className="layout-wrapper layout-content-navbar"> 
+    <div className="layout-wrapper layout-navbar-full layout-horizontal layout-without-menu"> 
          
     {/* layout container */}
     <div className="layout-container">
       
-      <Sidebar />  
+      <TabBar />  
        
       {/* layout page */}
      <div className="layout-page">
         
-      <Navbar />
+      <Menu />
      
      {/* content wrapper */}
-     <div class="content-wrapper">
+     <div class="content-wrapper main-session">
             {/* <!-- Content --> */}
 
             <div class="container-xxl flex-grow-1 container-p-y">

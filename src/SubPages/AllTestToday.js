@@ -3,7 +3,7 @@ import { Menu } from '../Components/Menu';
 
 import Navbar from '../Components/Navbar'; 
 import Sidebar from '../Components/Sidebar';
-import { TaBbar } from '../Components/TaBbar';
+import { TabBar } from '../Components/TaBbar';
 
 function AllTestToday() {
     return (
@@ -11,23 +11,20 @@ function AllTestToday() {
       <div className="layout-wrapper layout-navbar-full layout-horizontal layout-without-menu">
         <div className="layout-container">
         
-           <TaBbar />  
+           <TabBar />  
          
           <div className="layout-page">
-              <Menu />      
-             {/* <!-- / Navbar --> */}
-  
+                 <Menu />
              {/* <!-- Content wrapper - All Test Today --> */}
-            <div className="content-wrapper">
+            <div className="content-wrapper main-session">
               {/* <!-- Content --> */}
-  
-              <div className="container-xxl flex-grow-1 container-p-y">
+                  
+              <div className="container-xxl flex-grow-1 container-p-y mt-5">
            
                 {/* <!-- Users List Table --> */} 
-                
                 <div className="card">
-                <h5 className="card-header">All tests Today</h5>
-                <div className="table-responsive text-nowrap">
+                 <h5 className="card-header">All tests Today</h5>
+                 <div className="table-responsive text-nowrap">
                   <table className="table">
                     <thead>
                       <tr>
