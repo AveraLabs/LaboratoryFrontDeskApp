@@ -1,5 +1,3 @@
-import Navbar from '../Components/Navbar'; 
-
 import { Menu } from '../Components/Menu';
 
 import { TabBar } from '../Components/TaBbar';
@@ -15,7 +13,7 @@ const Calender = () => {
           {/* <!-- Menu --> */}
               <TabBar /> 
         
-          <div className="layout-page">
+          <div className="layout-page"> 
               <Menu />
              {/* <!-- Content wrapper - Calender --> */}
              <div className="content-wrapper main-session"> 
