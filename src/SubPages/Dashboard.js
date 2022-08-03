@@ -117,7 +117,7 @@ const PendingBookings = () => {
                     </thead>
                     <tbody className="table-border-bottom-0">
                       <tr>
-                        <td><i className="fa fa-user fa-lg text-danger me-3"></i> <strong>7657c174-284e-483f-9113-948e9128cf9c</strong></td>
+                        <td><i className="fa fa-user fa-lg text-danger me-3"></i> <strong>AV-33244</strong></td>
                         <td>Blood test</td>
                         <td> 
                         GH₵ 200
@@ -140,7 +140,7 @@ const PendingBookings = () => {
                         </td>
                       </tr>
                       <tr>
-                        <td><i className="fa fa-user fa-lg text-info me-3"></i> <strong>194c7967-f32d-4da7-b13a-16f7427d8ec5</strong></td>
+                        <td><i className="fa fa-user fa-lg text-info me-3"></i> <strong>AV-33245</strong></td>
                         <td>Liver test</td>
                         <td> 
                         GH₵ 200
@@ -163,7 +163,7 @@ const PendingBookings = () => {
                         </td>
                       </tr>
                       <tr>
-                        <td><i className="fa fa-user fa-lg text-success me-3"></i> <strong>3d539ca7-a27d-4833-ade6-320e27eefb69</strong></td>
+                        <td><i className="fa fa-user fa-lg text-success me-3"></i> <strong>AV-33246</strong></td>
                         <td>Hepatitis A</td>
                         <td>
                         GH₵ 200
@@ -184,7 +184,7 @@ const PendingBookings = () => {
                       </tr>
                       <tr>
                         <td>
-                          <i className="fa fa-user fa-lg text-primary me-3"></i> <strong>09777d45-93c2-45db-9449-012e6c07fc94</strong>
+                          <i className="fa fa-user fa-lg text-primary me-3"></i> <strong>AV-33247</strong>
                         </td>
                         <td>Syphillis</td>
                         <td> 
