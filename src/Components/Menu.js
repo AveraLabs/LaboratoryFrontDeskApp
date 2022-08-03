@@ -15,7 +15,7 @@ export const Menu = () => {
           </a>
         </li>
 
-        {/* <!-- Layouts --> */}
+        {/* <!-- All tests today --> */}
         <li className="menu-item">
           <a href="/allteststoday" className="menu-link">
             <i className="menu-icon tf-icons bx bx-layout"></i>
@@ -23,7 +23,7 @@ export const Menu = () => {
           </a>
         </li>
 
-        {/* <!-- Apps --> */}
+        {/* <!-- Did not show up --> */}
         <li className="menu-item">
           <a href="/didnotshowup" className="menu-link">
             <i className="menu-icon tf-icons bx bx-customize"></i>
@@ -32,7 +32,7 @@ export const Menu = () => {
          
         </li>
 
-        {/* <!-- Pages --> */}
+        {/* <!-- Cancelled Appointment --> */}
         <li className="menu-item">
           <a href="/cancelledappointment" className="menu-link">
             <i className="menu-icon tf-icons bx bx-collection"></i>
@@ -41,7 +41,7 @@ export const Menu = () => {
           
         </li>
 
-        {/* <!-- Components --> */}
+        {/* <!-- Calender --> */}
         <li className="menu-item">
           <a href="/calender" className="menu-link">
             <i className="menu-icon tf-icons bx bx-code-block"></i>

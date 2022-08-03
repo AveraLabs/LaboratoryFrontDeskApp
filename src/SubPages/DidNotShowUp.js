@@ -17,9 +17,7 @@ const DidNotShowUp = () => {
 
       <div className="content-wrapper main-session"> 
        
-      
        <div className="container-xxl flex-grow-1 container-p-y mt-5">   
-
        <div className="card">
                 <h5 className="card-header">Did not show up</h5>
                 <div className="table-responsive text-nowrap">

@@ -16,7 +16,8 @@
  }  
 
  .container-tabs { 
-   padding-top: 14px
+   padding-top: 14px;
+   padding-left: 250px;
  }
 
  .main-session { 
