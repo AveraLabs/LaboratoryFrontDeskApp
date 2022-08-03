@@ -72,7 +72,7 @@ function UserProfile () {
                           </li>
                           <li className="mb-3">
                             <span className="fw-bold me-2">Username:</span>
-                            <span>vafgot@vultukir.org</span>
+                            <span>violet.dev</span>
                           </li>
                           <li className="mb-3">
                             <span className="fw-bold me-2">Gender:</span>
@@ -94,14 +94,8 @@ function UserProfile () {
                             <span className="fw-bold me-2">Payment Status:</span>
                             <span className="badge bg-label-warning">NOT PAID</span>
                           </li>
-                          {/* <li className="mb-3">
-                            <span className="fw-bold me-2">Contact:</span>
-                            <span>(123) 456-7890</span>
-                          </li>
-                          <li className="mb-3">
-                            <span className="fw-bold me-2">Languages:</span>
-                            <span>French</span>
-                          </li>
+                          {/* 
+                         
                           <li className="mb-3">
                             <span className="fw-bold me-2">Country:</span>
                             <span>England</span>
@@ -115,7 +109,7 @@ function UserProfile () {
                             data-bs-toggle="modal"
                             >Start</a
                           >
-                          <a href="/frontdesk" className="btn btn-label-danger suspend-user">Patients List</a>
+                          <a href="/frontdesk" className="btn btn-light suspend-user">Patients List</a>
                         </div>
                       </div>
                     </div>
