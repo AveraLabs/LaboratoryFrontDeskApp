@@ -43,7 +43,7 @@ function UserProfile () {
                           />
                           <div className="user-info text-center">
                             <h5 className="mb-2">Monica</h5>
-                            <span className="badge bg-label-secondary">7657c174-284e-483f-9113</span>
+                            <span className="badge bg-label-secondary">AV-33244</span>
                           </div>
                         </div>
                       </div>
@@ -58,7 +58,7 @@ function UserProfile () {
                         <div className="d-flex align-items-start mt-3 gap-3">
                           <span className="badge bg-label-primary p-2 rounded"><i className="bx bx-customize bx-sm"></i></span>
                           <div>
-                            <h5 className="mb-0">G568</h5>
+                            <h5 className="mb-0">GH₵ 99.00</h5>
                             <span>Total Cost</span>
                           </div>
                         </div>
@@ -76,7 +76,7 @@ function UserProfile () {
                           </li>
                           <li className="mb-3">
                             <span className="fw-bold me-2">Gender:</span>
-                            <span className="badge bg-label-success">Female</span>
+                            <span className="">Female</span>
                           </li>
                           <li className="mb-3">
                             <span className="fw-bold me-2">Age:</span>
@@ -92,7 +92,7 @@ function UserProfile () {
                           </li> 
                           <li className="mb-3">
                             <span className="fw-bold me-2">Payment Status:</span>
-                            <span className="badge bg-label-success">NOT PAID</span>
+                            <span className="badge bg-label-warning">NOT PAID</span>
                           </li>
                           {/* <li className="mb-3">
                             <span className="fw-bold me-2">Contact:</span>
@@ -115,7 +115,7 @@ function UserProfile () {
                             data-bs-toggle="modal"
                             >Start</a
                           >
-                          <a href="javascript:;" className="btn btn-label-danger suspend-user">Patients List</a>
+                          <a href="/frontdesk" className="btn btn-label-danger suspend-user">Patients List</a>
                         </div>
                       </div>
                     </div>
@@ -170,40 +170,24 @@ function UserProfile () {
                     <li className="nav-item">
                       <a className="nav-link" href="javascript:void(0);"><i className="bx bx-user me-1"></i>Labs</a>
                     </li>
-                    {/* <li className="nav-item">
-                      <a className="nav-link" href="app-user-view-security.html"
-                        ><i className="bx bx-lock-alt me-1"></i>Security</a
-                      >
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="app-user-view-billing.html"
-                        ><i className="bx bx-detail me-1"></i>Billing & Plans</a
-                      >
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="app-user-view-notifications.html"
-                        ><i className="bx bx-bell me-1"></i>Notifications</a
-                      >
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="app-user-view-connections.html"
-                        ><i className="bx bx-link-alt me-1"></i>Connections</a
-                      >
-                    </li> */}
+                    {/* 
+                   
+                  
+                   */}
                   </ul>
                   {/* <!--/ User Pills --> */}
 
                   {/* <!-- Project table --> */}
                   <div className="card mb-4">
-                    <h5 className="card-header">User's Projects List</h5>
+                    <h5 className="card-header">User's Labs</h5>
                     <div className="table-responsive mb-3">
                       <table className="table datatable-project border-top">
                         <thead>
                           <tr>
                             <th></th>
-                            <th>Project</th>
-                            <th className="text-nowrap">Total Task</th>
-                            <th>Progress</th>
+                            <th>Test</th>
+                            <th className="text-nowrap">Cost</th>
+                            <th>Status</th>
                             <th>Hours</th>
                           </tr>
                         </thead>
@@ -221,12 +205,12 @@ function UserProfile () {
                           <span className="timeline-point timeline-point-primary"></span>
                           <div className="timeline-event">
                             <div className="timeline-header mb-1">
-                              <h6 className="mb-0">12 Invoices have been paid</h6>
+                              <h6 className="mb-0">Started</h6>
                               <small className="text-muted">12 min ago</small>
                             </div>
-                            <p className="mb-2">Invoices have been paid to the company</p>
+                            <p className="mb-2">User has started labs</p>
                             <div className="d-flex">
-                              <a href="javascript:void(0)" className="me-3">
+                              {/* <a href="javascript:void(0)" className="me-3">
                                 <img
                                   src="../../assets/img/icons/misc/pdf.png"
                                   alt="PDF image"
@@ -234,7 +218,7 @@ function UserProfile () {
                                   className="me-2"
                                 />
                                 <span className="fw-bold text-body">invoices.pdf</span>
-                              </a>
+                              </a> */}
                             </div>
                           </div>
                         </li>
@@ -242,11 +226,12 @@ function UserProfile () {
                           <span className="timeline-point timeline-point-warning"></span>
                           <div className="timeline-event">
                             <div className="timeline-header mb-1">
-                              <h6 className="mb-0">Client Meeting</h6>
+                              <h6 className="mb-0">Ongoing</h6>
                               <small className="text-muted">45 min ago</small>
-                            </div>
-                            <p className="mb-2">Project meeting with john @10:15am</p>
-                            <div className="d-flex flex-wrap">
+                            </div> 
+                            <p className="mb-2">User's labs is in progress</p>
+                            {/* <p className="mb-2">Project meeting with john @10:15am</p> */}
+                            {/* <div className="d-flex flex-wrap">
                               <div className="avatar me-3">
                                 <img src="../../assets/img/avatars/3.png" alt="Avatar" className="rounded-circle" />
                               </div>
@@ -254,18 +239,19 @@ function UserProfile () {
                                 <h6 className="mb-0">Lester McCarthy (Client)</h6>
                                 <span>CEO of PIXINVENT</span>
                               </div>
-                            </div>
+                            </div> */}
                           </div>
                         </li>
                         <li className="timeline-item timeline-item-transparent">
                           <span className="timeline-point timeline-point-info"></span>
                           <div className="timeline-event">
                             <div className="timeline-header mb-1">
-                              <h6 className="mb-0">Create a new project for client</h6>
+                              <h6 className="mb-0">Completed</h6>
                               <small className="text-muted">2 Day Ago</small>
-                            </div>
-                            <p className="mb-2">5 team members in a project</p>
-                            <div className="d-flex align-items-center avatar-group">
+                            </div> 
+                            <p className="mb-2">User has completed labs</p>
+                            {/* <p className="mb-2">5 team members in a project</p> */}
+                            {/* <div className="d-flex align-items-center avatar-group">
                               <div
                                 className="avatar pull-up"
                                 data-bs-toggle="tooltip"
@@ -311,10 +297,10 @@ function UserProfile () {
                               >
                                 <img src="../../assets/img/avatars/14.png" alt="Avatar" className="rounded-circle" />
                               </div>
-                            </div>
+                            </div> */}
                           </div>
                         </li>
-                        <li className="timeline-item timeline-item-transparent">
+                        {/* <li className="timeline-item timeline-item-transparent">
                           <span className="timeline-point timeline-point-success"></span>
                           <div className="timeline-event">
                             <div className="timeline-header mb-1">
@@ -323,7 +309,7 @@ function UserProfile () {
                             </div>
                             <p className="mb-0">Weekly review of freshly prepared design for our new app.</p>
                           </div>
-                        </li>
+                        </li> */}
                         <li className="timeline-end-indicator">
                           <i className="bx bx-check-circle"></i>
                         </li>
@@ -532,34 +518,24 @@ function UserProfile () {
                     <div className="modal-body">
                       <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       <div className="text-center mb-4">
-                        <h3>Upgrade Plan</h3>
-                        <p>Choose the best plan for user.</p>
+                        <h3>Confirm Payment</h3>
+                        <p>This is to confirm that patien with avera ID AV-3244 has made payment of the amount below </p>
                       </div>
-                      <form id="upgradePlanForm" className="row g-3" onsubmit="return false">
-                        <div className="col-sm-9">
-                          <label className="form-label" for="choosePlan">Choose Plan</label>
-                          <select id="choosePlan" name="choosePlan" className="form-select" aria-label="Choose Plan">
-                            <option selected>Choose Plan</option>
-                            <option value="standard">Standard - $99/month</option>
-                            <option value="exclusive">Exclusive - $249/month</option>
-                            <option value="Enterprise">Enterprise - $499/month</option>
-                          </select>
+                      <div className="d-flex justify-content-center align-items-center flex-wrap">
+                        <div className="d-flex justify-content-center me-2 mt-2">
+                          <sup className="h5 pricing-currency fw-normal pt-2 mt-4 mb-0 me-1 text-primary">GH₵</sup>
+                          <h1 className="fw-normal display-1 mb-0 text-primary">99</h1>
+                          {/* <sub className="h5 pricing-duration mt-auto mb-3">/month</sub> */}
                         </div>
-                        <div className="col-sm-3 d-flex align-items-end">
-                          <button type="submit" className="btn btn-primary">Upgrade</button>
-                        </div>
-                      </form>
+                        {/* <button className="btn btn-label-danger cancel-subscription mt-3">Cancel Subscription</button> */}
+                      </div>
                     </div>
                     <hr className="mx-md-n5 mx-n3" />
                     <div className="modal-body">
-                      <h6 className="mb-0">User current plan is standard plan</h6>
+                      {/* <h6 className="mb-0">User current plan is standard plan</h6> */}
                       <div className="d-flex justify-content-between align-items-center flex-wrap">
-                        <div className="d-flex justify-content-center me-2 mt-2">
-                          <sup className="h5 pricing-currency fw-normal pt-2 mt-4 mb-0 me-1 text-primary">$</sup>
-                          <h1 className="fw-normal display-1 mb-0 text-primary">99</h1>
-                          <sub className="h5 pricing-duration mt-auto mb-3">/month</sub>
-                        </div>
-                        <button className="btn btn-label-danger cancel-subscription mt-3">Cancel Subscription</button>
+                       <button className="btn btn-label-danger cancel-subscription mt-3">Cancel</button>
+                        <button className="btn btn-label-success cancel-subscription mt-3">Confirm</button>
                       </div>
                     </div>
                   </div>
