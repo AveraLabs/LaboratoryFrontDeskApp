@@ -132,7 +132,7 @@ const PendingBookings = () => {
                             <div className="dropdown-menu">
                               <a className="dropdown-item" href="/viewprofile"
                                 ><i className="bx bx-show me-2"></i> View </a>
-                              <a className="dropdown-item" href="/startprofile"
+                              <a className="dropdown-item" href="/startprocess"
                                 ><i className="bx bx-send me-1"></i> Start</a
                               >
                             </div>
@@ -155,7 +155,7 @@ const PendingBookings = () => {
                             <div className="dropdown-menu">
                               <a className="dropdown-item" href="/viewprofile"
                                 ><i className="bx bx-show me-2"></i> View </a>
-                              <a className="dropdown-item" href="/startprofile"
+                              <a className="dropdown-item" href="/startprocess"
                                 ><i className="bx bx-send me-1"></i> Start</a
                               >
                             </div>
@@ -178,7 +178,7 @@ const PendingBookings = () => {
                             <div className="dropdown-menu">
                               <a className="dropdown-item" href="/viewprofile"
                                 ><i className="bx bx-show me-2"></i> View</a> 
-                                <a className="dropdown-item" href="/startprofile"
+                                <a className="dropdown-item" href="/startprocess"
                                 ><i className="bx bx-send me-1"></i> Start</a>
                             </div>
                           </div>
@@ -202,7 +202,7 @@ const PendingBookings = () => {
                             <div className="dropdown-menu">
                               <a className="dropdown-item" href="/viewprofile"
                                 ><i className="bx bx-show"></i> View </a> 
-                                <a className="dropdown-item" href="/startprofile"
+                                <a className="dropdown-item" href="/startprocess"
                                 ><i className="bx bx-send"></i> Start </a>
                             </div>
                           </div>

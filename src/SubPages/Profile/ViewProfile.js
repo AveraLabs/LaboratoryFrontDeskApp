@@ -101,7 +101,7 @@ function UserProfile () {
                         </ul>
                         <div className="d-flex justify-content-center pt-3">
                           <a
-                            href="javascript:;"
+                            href="/startprocess"
                             className="btn btn-primary me-3"
                             data-bs-target="#editUser"
                             data-bs-toggle="modal"
@@ -114,30 +114,7 @@ function UserProfile () {
                   </div>
                   {/* <!-- /User Card --> */}
                   {/* <!-- Plan Card --> */}
-                  <div className="card">
-                    <div className="card-body">
-                      <div className="d-flex justify-content-between align-items-start">
-                        <span className="badge bg-label-primary">TOTAL LAB COST</span>
-                        <div className="d-flex justify-content-center">
-                          <sup className="h5 pricing-currency mt-3 mt-sm-4 mb-0 me-1 text-primary">GH₵</sup>
-                          <h1 className="display-3 fw-normal mb-0 text-primary">99</h1>
-                          {/* <sub className="fs-6 pricing-duration mt-auto mb-4">/month</sub> */}
-                        </div>
-                      </div>
-                      <ul className="ps-3 g-2 mb-3">
-                        <li className="mb-2">test 1</li>
-                        <li className="mb-2">test 2</li>
-                        <li>test 3</li>
-                      </ul>
-                    
-                      {/* <span>4 days remaining</span> */}
-                      <div className="d-grid w-100 mt-3 pt-2">
-                        <button className="btn btn-primary" data-bs-target="#upgradePlanModal" data-bs-toggle="modal">
-                           Confirm Payment
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+                
                   {/* <!-- /Plan Card --> */}
                 </div>
                 {/* <!--/ User Sidebar --> */}

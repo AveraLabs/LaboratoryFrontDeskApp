@@ -22,7 +22,7 @@ function App() {
         <Route path='frontdesk' element={<PendingBookings />} /> 
         <Route path="allteststoday" element={<AllTestToday />} />  
         <Route path='viewprofile' element={<UserProfile />} /> 
-        <Route path='startprofile' element={<Start />} />
+        <Route path='startprocess' element={<Start />} />
         <Route path="didnotshowup" element={<DidNotShowUp />} /> 
         <Route path="cancelledappointment" element={<CancelledAppointment />} /> 
         <Route path="calender" element={<Calender />} /> 
