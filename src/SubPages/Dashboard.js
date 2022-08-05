@@ -130,9 +130,9 @@ const PendingBookings = () => {
                               <i className="bx bx-dots-vertical-rounded"></i>
                             </button>
                             <div className="dropdown-menu">
-                              <a className="dropdown-item" href="/userprofile"
+                              <a className="dropdown-item" href="/viewprofile"
                                 ><i className="bx bx-show me-2"></i> View </a>
-                              <a className="dropdown-item" href="javascript:void(0);"
+                              <a className="dropdown-item" href="/startprofile"
                                 ><i className="bx bx-send me-1"></i> Start</a
                               >
                             </div>
@@ -153,9 +153,9 @@ const PendingBookings = () => {
                               <i className="bx bx-dots-vertical-rounded"></i>
                             </button>
                             <div className="dropdown-menu">
-                              <a className="dropdown-item" href="/userprofile"
+                              <a className="dropdown-item" href="/viewprofile"
                                 ><i className="bx bx-show me-2"></i> View </a>
-                              <a className="dropdown-item" href="javascript:void(0);"
+                              <a className="dropdown-item" href="/startprofile"
                                 ><i className="bx bx-send me-1"></i> Start</a
                               >
                             </div>
@@ -176,9 +176,9 @@ const PendingBookings = () => {
                               <i className="bx bx-dots-vertical-rounded"></i>
                             </button>
                             <div className="dropdown-menu">
-                              <a className="dropdown-item" href="/userprofile"
+                              <a className="dropdown-item" href="/viewprofile"
                                 ><i className="bx bx-show me-2"></i> View</a> 
-                                <a className="dropdown-item" href="/userprofile"
+                                <a className="dropdown-item" href="/startprofile"
                                 ><i className="bx bx-send me-1"></i> Start</a>
                             </div>
                           </div>
@@ -200,9 +200,9 @@ const PendingBookings = () => {
                               <i className="bx bx-dots-vertical-rounded"></i>
                             </button>
                             <div className="dropdown-menu">
-                              <a className="dropdown-item" href="/userprofile"
+                              <a className="dropdown-item" href="/viewprofile"
                                 ><i className="bx bx-show"></i> View </a> 
-                                <a className="dropdown-item" href="/userprofile"
+                                <a className="dropdown-item" href="/startprofile"
                                 ><i className="bx bx-send"></i> Start </a>
                             </div>
                           </div>
