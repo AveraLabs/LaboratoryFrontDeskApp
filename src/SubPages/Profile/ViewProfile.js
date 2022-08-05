@@ -103,8 +103,8 @@ function UserProfile () {
                           <a
                             href="/startprocess"
                             className="btn btn-primary me-3"
-                            data-bs-target="#editUser"
-                            data-bs-toggle="modal"
+                            // data-bs-target="#editUser"
+                            // data-bs-toggle="modal"
                             >Start</a
                           >
                           <a href="/frontdesk" className="btn btn-light suspend-user">Patients List</a>
