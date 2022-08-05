@@ -8,7 +8,7 @@ import DidNotShowUp from './SubPages/DidNotShowUp';
 import CancelledAppointment from './SubPages/CancelledAppointment';
 import Calender  from './SubPages/Calender';
 import PendingBookings from './SubPages/Dashboard';
-import UserProfile  from './SubPages/Profile/UserProfile';
+import UserProfile  from './SubPages/Profile/ViewProfile';
 
 // ccc
 function App() {

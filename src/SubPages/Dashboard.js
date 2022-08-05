@@ -132,9 +132,9 @@ const PendingBookings = () => {
                             <div className="dropdown-menu">
                               <a className="dropdown-item" href="/userprofile"
                                 ><i className="bx bx-show me-2"></i> View </a>
-                              {/* <a className="dropdown-item" href="javascript:void(0);"
-                                ><i className="bx bx-trash me-1"></i> Delete</a
-                              > */}
+                              <a className="dropdown-item" href="javascript:void(0);"
+                                ><i className="bx bx-send me-1"></i> Start</a
+                              >
                             </div>
                           </div>
                         </td>
@@ -155,9 +155,9 @@ const PendingBookings = () => {
                             <div className="dropdown-menu">
                               <a className="dropdown-item" href="/userprofile"
                                 ><i className="bx bx-show me-2"></i> View </a>
-                              {/* <a className="dropdown-item" href="javascript:void(0);"
-                                ><i className="bx bx-trash me-2"></i> Delete</a
-                              > */}
+                              <a className="dropdown-item" href="javascript:void(0);"
+                                ><i className="bx bx-send me-1"></i> Start</a
+                              >
                             </div>
                           </div>
                         </td>
@@ -177,7 +177,9 @@ const PendingBookings = () => {
                             </button>
                             <div className="dropdown-menu">
                               <a className="dropdown-item" href="/userprofile"
-                                ><i className="bx bx-show me-2"></i> View</a>
+                                ><i className="bx bx-show me-2"></i> View</a> 
+                                <a className="dropdown-item" href="/userprofile"
+                                ><i className="bx bx-send me-1"></i> Start</a>
                             </div>
                           </div>
                         </td>
@@ -189,35 +191,7 @@ const PendingBookings = () => {
                         <td>Syphillis</td>
                         <td> 
                          GH₵ 200
-                          {/* <ul className="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Lilian Fuller"
-                            >
-                              <img src="../../assets/img/avatars/5.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Sophia Wilkerson"
-                            >
-                              <img src="../../assets/img/avatars/6.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                            <li
-                              data-bs-toggle="tooltip"
-                              data-popup="tooltip-custom"
-                              data-bs-placement="top"
-                              className="avatar avatar-xs pull-up"
-                              title="Christina Parker"
-                            >
-                              <img src="../../assets/img/avatars/7.png" alt="Avatar" className="rounded-circle" />
-                            </li>
-                          </ul> */}
+                          
                         </td>
                         <td><span className="badge bg-label-warning me-1">Pending</span></td>
                         <td>
@@ -227,7 +201,9 @@ const PendingBookings = () => {
                             </button>
                             <div className="dropdown-menu">
                               <a className="dropdown-item" href="/userprofile"
-                                ><i className="bx bx-show"></i> View </a>
+                                ><i className="bx bx-show"></i> View </a> 
+                                <a className="dropdown-item" href="/userprofile"
+                                ><i className="bx bx-send"></i> Start </a>
                             </div>
                           </div>
                         </td>

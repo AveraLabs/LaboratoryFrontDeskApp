@@ -1,8 +1,6 @@
 import React from 'react' 
-import Navbar from '../../Components/Navbar'; 
 import {Menu} from '../../Components/Menu';
 import { TabBar } from '../../Components/TaBbar';
-
 
 function UserProfile () {
   return ( 
@@ -131,20 +129,7 @@ function UserProfile () {
                         <li className="mb-2">test 2</li>
                         <li>test 3</li>
                       </ul>
-                      {/* <div className="d-flex justify-content-between align-items-center mb-1">
-                        <h6 className="mb-0">Days</h6>
-                        <h6 className="mb-0">65% Completed</h6>
-                      </div> */}
-                      {/* <div className="progress mb-1" style="height: 8px">
-                        <div
-                          className="progress-bar"
-                          role="progressbar"
-                          style="width: 65%"
-                          aria-valuenow="65"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div> */}
+                    
                       {/* <span>4 days remaining</span> */}
                       <div className="d-grid w-100 mt-3 pt-2">
                         <button className="btn btn-primary" data-bs-target="#upgradePlanModal" data-bs-toggle="modal">
@@ -245,65 +230,10 @@ function UserProfile () {
                             </div> 
                             <p className="mb-2">User has completed labs</p>
                             {/* <p className="mb-2">5 team members in a project</p> */}
-                            {/* <div className="d-flex align-items-center avatar-group">
-                              <div
-                                className="avatar pull-up"
-                                data-bs-toggle="tooltip"
-                                data-popup="tooltip-custom"
-                                data-bs-placement="top"
-                                title="Vinnie Mostowy"
-                              >
-                                <img src="../../assets/img/avatars/5.png" alt="Avatar" className="rounded-circle" />
-                              </div>
-                              <div
-                                className="avatar pull-up"
-                                data-bs-toggle="tooltip"
-                                data-popup="tooltip-custom"
-                                data-bs-placement="top"
-                                title="Marrie Patty"
-                              >
-                                <img src="../../assets/img/avatars/12.png" alt="Avatar" className="rounded-circle" />
-                              </div>
-                              <div
-                                className="avatar pull-up"
-                                data-bs-toggle="tooltip"
-                                data-popup="tooltip-custom"
-                                data-bs-placement="top"
-                                title="Jimmy Jackson"
-                              >
-                                <img src="../../assets/img/avatars/9.png" alt="Avatar" className="rounded-circle" />
-                              </div>
-                              <div
-                                className="avatar pull-up"
-                                data-bs-toggle="tooltip"
-                                data-popup="tooltip-custom"
-                                data-bs-placement="top"
-                                title="Kristine Gill"
-                              >
-                                <img src="../../assets/img/avatars/6.png" alt="Avatar" className="rounded-circle" />
-                              </div>
-                              <div
-                                className="avatar pull-up"
-                                data-bs-toggle="tooltip"
-                                data-popup="tooltip-custom"
-                                data-bs-placement="top"
-                                title="Nelson Wilson"
-                              >
-                                <img src="../../assets/img/avatars/14.png" alt="Avatar" className="rounded-circle" />
-                              </div>
-                            </div> */}
+                          
                           </div>
                         </li>
-                        {/* <li className="timeline-item timeline-item-transparent">
-                          <span className="timeline-point timeline-point-success"></span>
-                          <div className="timeline-event">
-                            <div className="timeline-header mb-1">
-                              <h6 className="mb-0">Design Review</h6>
-                              <small className="text-muted">5 days Ago</small>
-                            </div>
-                            <p className="mb-0">Weekly review of freshly prepared design for our new app.</p>
-                          </div>
-                        </li> */}
+                       
                         <li className="timeline-end-indicator">
                           <i className="bx bx-check-circle"></i>
                         </li>
