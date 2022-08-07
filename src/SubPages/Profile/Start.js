@@ -10,7 +10,7 @@ function Start () {
       icon: 'success', 
       title: 'Payment Confirmed',  
       type: 'success',   
-      confirmButtonColor: '#00FF00',  
+       confirmButtonColor: '#00FF7F',   
       text: 'Payment of GH₵ 99 by AV-33244 has been confirmed',  
     });  
   }  
