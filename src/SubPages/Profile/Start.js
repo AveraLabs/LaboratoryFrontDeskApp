@@ -1,21 +1,31 @@
 import React from 'react' 
 import {Menu} from '../../Components/Menu';
-import { TabBar } from '../../Components/TaBbar';
+import { TabBar } from '../../Components/TaBbar'; 
+import Swal from 'sweetalert2';
 
-function Start () {
+function Start () { 
+
+  const handleAlert = () => {  
+    Swal.fire({   
+      icon: 'success', 
+      title: 'Payment Confirmed',  
+      type: 'success',   
+      confirmButtonColor: '#00FF00',  
+      text: 'Payment of GH₵ 99 by AV-33244 has been confirmed',  
+    });  
+  }  
+
   return ( 
     <div className="layout-wrapper layout-navbar-full layout-horizontal layout-without-menu"> 
          
     {/* layout container */}
     <div className="layout-container">
-      
       <TabBar />  
        
       {/* layout page */}
      <div className="layout-page">
         
       <Menu />
-     
      {/* content wrapper */}
      <div className="content-wrapper main-session">
             {/* <!-- Content --> */}
@@ -92,21 +102,10 @@ function Start () {
                             <span className="fw-bold me-2">Payment Status:</span>
                             <span className="badge bg-label-warning">NOT PAID</span>
                           </li>
-                          {/* 
-                         
-                          <li className="mb-3">
-                            <span className="fw-bold me-2">Country:</span>
-                            <span>England</span>
-                          </li> */}
+                        
                         </ul>
                         <div className="d-flex justify-content-center pt-3">
-                          <a
-                            href="javascript:;"
-                            className="btn btn-primary me-3"
-                            data-bs-target="#editUser"
-                            data-bs-toggle="modal"
-                            >Start</a
-                          >
+                      
                           <a href="/frontdesk" className="btn btn-light suspend-user">Patients List</a>
                         </div>
                       </div>
@@ -149,10 +148,7 @@ function Start () {
                     <li className="nav-item">
                       <a className="nav-link" href="javascript:void(0);"><i className="bx bx-user me-1"></i>Labs</a>
                     </li>
-                    {/* 
-                   
                   
-                   */}
                   </ul>
                   {/* <!--/ User Pills --> */}
 
@@ -189,15 +185,7 @@ function Start () {
                             </div>
                             <p className="mb-2">User has started labs</p>
                             <div className="d-flex">
-                              {/* <a href="javascript:void(0)" className="me-3">
-                                <img
-                                  src="../../assets/img/icons/misc/pdf.png"
-                                  alt="PDF image"
-                                  width="20"
-                                  className="me-2"
-                                />
-                                <span className="fw-bold text-body">invoices.pdf</span>
-                              </a> */}
+                            
                             </div>
                           </div>
                         </li>
@@ -257,175 +245,7 @@ function Start () {
               </div>
 
               {/* <!-- Modal --> */}
-              {/* <!-- Edit User Modal --> */}
-              <div className="modal fade" id="editUser" tabindex="-1" aria-hidden="true">
-                <div className="modal-dialog modal-lg modal-simple modal-edit-user">
-                  <div className="modal-content p-3 p-md-5">
-                    <div className="modal-body">
-                      <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      <div className="text-center mb-4">
-                        <h3>Edit User Information</h3>
-                        <p>Updating user details will receive a privacy audit.</p>
-                      </div>
-                      <form id="editUserForm" className="row g-3" onsubmit="return false">
-                        <div className="col-12 col-md-6">
-                          <label className="form-label" for="modalEditUserFirstName">First Name</label>
-                          <input
-                            type="text"
-                            id="modalEditUserFirstName"
-                            name="modalEditUserFirstName"
-                            className="form-control"
-                            placeholder="John"
-                          />
-                        </div>
-                        <div className="col-12 col-md-6">
-                          <label className="form-label" for="modalEditUserLastName">Last Name</label>
-                          <input
-                            type="text"
-                            id="modalEditUserLastName"
-                            name="modalEditUserLastName"
-                            className="form-control"
-                            placeholder="Doe"
-                          />
-                        </div>
-                        <div className="col-12">
-                          <label className="form-label" for="modalEditUserName">Username</label>
-                          <input
-                            type="text"
-                            id="modalEditUserName"
-                            name="modalEditUserName"
-                            className="form-control"
-                            placeholder="john.doe.007"
-                          />
-                        </div>
-                        <div className="col-12 col-md-6">
-                          <label className="form-label" for="modalEditUserEmail">Email</label>
-                          <input
-                            type="text"
-                            id="modalEditUserEmail"
-                            name="modalEditUserEmail"
-                            className="form-control"
-                            placeholder="example@domain.com"
-                          />
-                        </div>
-                        <div className="col-12 col-md-6">
-                          <label className="form-label" for="modalEditUserStatus">Status</label>
-                          <select
-                            id="modalEditUserStatus"
-                            name="modalEditUserStatus"
-                            className="form-select"
-                            aria-label="Default select example"
-                          >
-                            <option selected>Status</option>
-                            <option value="1">Active</option>
-                            <option value="2">Inactive</option>
-                            <option value="3">Suspended</option>
-                          </select>
-                        </div>
-                        <div className="col-12 col-md-6">
-                          <label className="form-label" for="modalEditTaxID">Tax ID</label>
-                          <input
-                            type="text"
-                            id="modalEditTaxID"
-                            name="modalEditTaxID"
-                            className="form-control modal-edit-tax-id"
-                            placeholder="123 456 7890"
-                          />
-                        </div>
-                        <div className="col-12 col-md-6">
-                          <label className="form-label" for="modalEditUserPhone">Phone Number</label>
-                          <div className="input-group input-group-merge">
-                            <span className="input-group-text">+1</span>
-                            <input
-                              type="text"
-                              id="modalEditUserPhone"
-                              name="modalEditUserPhone"
-                              className="form-control phone-number-mask"
-                              placeholder="202 555 0111"
-                            />
-                          </div>
-                        </div>
-                        <div className="col-12 col-md-6">
-                          <label className="form-label" for="modalEditUserLanguage">Language</label>
-                          <select
-                            id="modalEditUserLanguage"
-                            name="modalEditUserLanguage"
-                            className="select2 form-select"
-                            multiple
-                          >
-                            <option value="">Select</option>
-                            <option value="english" selected>English</option>
-                            <option value="spanish">Spanish</option>
-                            <option value="french">French</option>
-                            <option value="german">German</option>
-                            <option value="dutch">Dutch</option>
-                            <option value="hebrew">Hebrew</option>
-                            <option value="sanskrit">Sanskrit</option>
-                            <option value="hindi">Hindi</option>
-                          </select>
-                        </div>
-                        <div className="col-12 col-md-6">
-                          <label className="form-label" for="modalEditUserCountry">Country</label>
-                          <select
-                            id="modalEditUserCountry"
-                            name="modalEditUserCountry"
-                            className="select2 form-select"
-                            data-allow-clear="true"
-                          >
-                            <option value="">Select</option>
-                            <option value="Australia">Australia</option>
-                            <option value="Bangladesh">Bangladesh</option>
-                            <option value="Belarus">Belarus</option>
-                            <option value="Brazil">Brazil</option>
-                            <option value="Canada">Canada</option>
-                            <option value="China">China</option>
-                            <option value="France">France</option>
-                            <option value="Germany">Germany</option>
-                            <option value="India">India</option>
-                            <option value="Indonesia">Indonesia</option>
-                            <option value="Israel">Israel</option>
-                            <option value="Italy">Italy</option>
-                            <option value="Japan">Japan</option>
-                            <option value="Korea">Korea, Republic of</option>
-                            <option value="Mexico">Mexico</option>
-                            <option value="Philippines">Philippines</option>
-                            <option value="Russia">Russian Federation</option>
-                            <option value="South Africa">South Africa</option>
-                            <option value="Thailand">Thailand</option>
-                            <option value="Turkey">Turkey</option>
-                            <option value="Ukraine">Ukraine</option>
-                            <option value="United Arab Emirates">United Arab Emirates</option>
-                            <option value="United Kingdom">United Kingdom</option>
-                            <option value="United States">United States</option>
-                          </select>
-                        </div>
-                        <div className="col-12">
-                          <label className="switch">
-                            <input type="checkbox" className="switch-input" />
-                            <span className="switch-toggle-slider">
-                              <span className="switch-on"></span>
-                              <span className="switch-off"></span>
-                            </span>
-                            <span className="switch-label">Use as a billing address?</span>
-                          </label>
-                        </div>
-                        <div className="col-12 text-center mt-4">
-                          <button type="submit" className="btn btn-primary me-sm-3 me-1">Submit</button>
-                          <button
-                            type="reset"
-                            className="btn btn-label-secondary"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                          >
-                            Cancel
-                          </button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* <!--/ Edit User Modal --> */}
+              
 
               {/* <!-- Add New Credit Card Modal --> */}
               <div className="modal fade" id="upgradePlanModal" tabindex="-1" aria-hidden="true">
@@ -450,8 +270,8 @@ function Start () {
                     <div className="modal-body">
                       {/* <h6 className="mb-0">User current plan is standard plan</h6> */}
                       <div className="d-flex justify-content-between align-items-center flex-wrap">
-                       <button className="btn btn-label-danger cancel-subscription mt-3">Cancel</button>
-                        <button className="btn btn-label-success cancel-subscription mt-3">Confirm</button>
+                        <button data-bs-dismiss="modal" arial-label="Close" className="btn btn-label-danger cancel-subscription mt-3">Cancel</button>
+                        <button onClick={handleAlert} className="btn btn-label-success cancel-subscription mt-3">Confirm</button>
                       </div>
                     </div>
                   </div>
