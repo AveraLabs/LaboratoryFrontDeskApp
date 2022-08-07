@@ -255,7 +255,7 @@ function Start () {
                       <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       <div className="text-center mb-4">
                         <h3>Confirm Payment</h3>
-                        <p>This is to confirm that patien with avera ID AV-33244 has made payment of the amount below </p>
+                        <p>This is to confirm that patient with avera ID AV-33244 has made payment of the amount below </p>
                       </div>
                       <div className="d-flex justify-content-center align-items-center flex-wrap">
                         <div className="d-flex justify-content-center me-2 mt-2">
