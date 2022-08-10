@@ -5,7 +5,7 @@ export const TabBar = () => {
     <nav className="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme" id="layout-navbar">
           <div className="container-xxl">
             <div className="navbar-brand app-brand demo d-none d-xl-flex py-0 me-4">
-              <a href="index.html" className="app-brand-link gap-2">
+              <a href="javascript:void(0)" className="app-brand-link gap-2">
                 <span className="app-brand-logo demo">
                   <svg
                     width="26px"
@@ -114,7 +114,7 @@ export const TabBar = () => {
                           <span className="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
                             <i className="bx bx-calendar fs-4"></i>
                           </span>
-                          <a href="app-calendar.html" className="stretched-link">Calendar</a>
+                          <a href="/calender" className="stretched-link">Calendar</a>
                           <small className="text-muted mb-0">Appointments</small>
                         </div>
                         <div className="dropdown-shortcuts-item col">
@@ -146,7 +146,7 @@ export const TabBar = () => {
                           <span className="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
                             <i className="bx bx-pie-chart-alt-2 fs-4"></i>
                           </span>
-                          <a href="index.html" className="stretched-link">Dashboard</a>
+                          <a href="/frontdesk" className="stretched-link">Dashboard</a>
                           <small className="text-muted mb-0">User Profile</small>
                         </div>
                         <div className="dropdown-shortcuts-item col">
@@ -430,7 +430,7 @@ export const TabBar = () => {
                   </a>
                   <ul className="dropdown-menu dropdown-menu-end">
                     <li>
-                      <a className="dropdown-item" href="pages-account-settings-account.html">
+                      <a className="dropdown-item" href="javascript:void(0);">
                         <div className="d-flex">
                           <div className="flex-shrink-0 me-3">
                             <div className="avatar avatar-online">
@@ -448,13 +448,13 @@ export const TabBar = () => {
                       <div className="dropdown-divider"></div>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/userprofile">
+                      <a className="dropdown-item" href="javascript:void(0);">
                         <i className="bx bx-user me-2"></i>
                         <span className="align-middle">My Profile</span>
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="pages-account-settings-account.html">
+                      <a className="dropdown-item" href="javascript:void(0);">
                         <i className="bx bx-cog me-2"></i>
                         <span className="align-middle">Settings</span>
                       </a>
@@ -464,7 +464,7 @@ export const TabBar = () => {
                       <div className="dropdown-divider"></div>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="pages-help-center-landing.html">
+                      <a className="dropdown-item" href="javascript:void(0);">
                         <i className="bx bx-support me-2"></i>
                         <span className="align-middle">Help</span>
                       </a>
@@ -475,7 +475,7 @@ export const TabBar = () => {
                       <div className="dropdown-divider"></div>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="auth-login-cover.html" target="_blank">
+                      <a className="dropdown-item" href="/login">
                         <i className="bx bx-power-off me-2"></i>
                         <span className="align-middle">Log Out</span>
                       </a>

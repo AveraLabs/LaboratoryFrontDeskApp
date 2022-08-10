@@ -143,14 +143,6 @@ function Start () {
 
                 {/* <!-- User Content --> */}
                 <div className="col-xl-8 col-lg-7 col-md-7 order-0 order-md-1">
-                  {/* <!-- User Pills --> */}
-                  <ul className="nav nav-pills flex-column flex-md-row mb-3">
-                    <li className="nav-item">
-                      <a className="nav-link" href="javascript:void(0);"><i className="bx bx-user me-1"></i>Labs</a>
-                    </li>
-                  
-                  </ul>
-                  {/* <!--/ User Pills --> */}
 
                   {/* <!-- Project table --> */}
                   <div className="card mb-4">
@@ -161,9 +153,9 @@ function Start () {
                           <tr>
                             <th></th>
                             <th>Test</th>
-                            <th className="text-nowrap">Cost</th>
+                            <th className="text-nowrap">Required Sample</th>
+                            <th>Turn Around Time</th>
                             <th>Status</th>
-                            <th>Hours</th>
                           </tr>
                         </thead>
                       </table>
