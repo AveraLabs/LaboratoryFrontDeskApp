@@ -97,8 +97,8 @@ const Verification = () => {
               type="numeric" 
               inputMode="number"
               style={{padding: '10px'}}  
-              inputStyle={{borderColor: 'black'}}
-              inputFocusStyle={{borderColor: 'blue'}}
+              inputStyle={{borderColor: '#237381'}}
+              inputFocusStyle={{borderColor: '#8FE3CF'}}
               onComplete={(value, index) => {}}
               autoSelect={true}
               regexCriteria={/^[ A-Za-z0-9_@./#&+-]*$/}
