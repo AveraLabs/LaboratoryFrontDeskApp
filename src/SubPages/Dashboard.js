@@ -8,10 +8,10 @@ const PendingBookings = () => {
       <div className="layout-wrapper layout-horizontal layout-without-menu layout-navbar-full"> 
           {/* <!-- Layout container --> */}
         <div className="layout-container">
-          {/* <TabBar/>      */}
+          <TabBar/>     
          
        <div className="layout-page">
-          {/* <Menu/> */}
+          <Menu/>
        
         <div className="content-wrapper"> 
          {/* <!--  Pending Bookings --> */} 
@@ -113,7 +113,7 @@ const PendingBookings = () => {
                   </table>
                 </div>
               </div>
-      </div>
+         </div>
       {/* <!-- / Content --> */}
 
       <div className="content-backdrop fade"></div> 
