@@ -13,7 +13,7 @@ const PendingBookings = () => {
        <div className="layout-page">
           <Menu/>
        
-        <div className="content-wrapper"> 
+        <div className="content-wrapper main-session"> 
          {/* <!--  Pending Bookings --> */} 
 
         <div className="container-xxl flex-grow-1 container-p-y">
