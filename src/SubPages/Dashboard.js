@@ -4,13 +4,10 @@ import { Menu } from '../Components/Menu';
 
 const PendingBookings = () => {
   return (
-      // <!-- Layout wrapper -->
-      
-      <div className="layout-wrapper layout-horizontal layout-without-menu layout-navbar-full">
-         
+    // <!-- Layout wrapper -->
+      <div className="layout-wrapper layout-horizontal layout-without-menu layout-navbar-full"> 
           {/* <!-- Layout container --> */}
         <div className="layout-container">
-         
           <TabBar/>     
          
        <div className="layout-page">
@@ -99,130 +96,29 @@ const PendingBookings = () => {
             </div>
           </div>
         </div> 
-
-        {/* <!-- Users List Table --> */} 
-        
-        <div className="card">
-                <h5 className="card-header">Pending Bookings</h5>
-                <div className="table-responsive text-nowrap">
-                  <table className="table">
+            
+          <div class="card">
+                <h5 class="card-header">Pending Bookings</h5>
+                <div class="card-datatable text-nowrap">
+                  <table class="datatables-ajax border table table-bordered">
                     <thead>
                       <tr>
-                        <th>AVERA ID</th>
-                        <th>TEST</th>
-                        <th>COST</th>
+                        <th>Avera ID</th>
+                        <th>Test</th>
+                        <th>Cost</th>
                         <th>Status</th>
                         <th>Actions</th>
                       </tr>
                     </thead>
-                    <tbody className="table-border-bottom-0">
-                      <tr>
-                        <td><i className="fa fa-user fa-lg text-danger me-3"></i> <strong>AV-33244</strong></td>
-                        <td>Blood test</td>
-                        <td> 
-                        GH₵ 200
-                       
-                        </td>
-                        <td><span className="badge bg-label-primary me-1">Active</span></td>
-                        <td>
-                          <div className="dropdown">
-                            <button type="button" className="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                              <i className="bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div className="dropdown-menu">
-                              <a className="dropdown-item" href="/viewprofile"
-                                ><i className="bx bx-show me-2"></i> View </a>
-                              <a className="dropdown-item" href="/startprocess"
-                                ><i className="bx bx-send me-1"></i> Start</a
-                              >
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><i className="fa fa-user fa-lg text-info me-3"></i> <strong>AV-33245</strong></td>
-                        <td>Liver test</td>
-                        <td> 
-                        GH₵ 200
-                         
-                        </td>
-                        <td><span className="badge bg-label-success me-1">Completed</span></td>
-                        <td>
-                          <div className="dropdown">
-                            <button type="button" className="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                              <i className="bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div className="dropdown-menu">
-                              <a className="dropdown-item" href="/viewprofile"
-                                ><i className="bx bx-show me-2"></i> View </a>
-                              <a className="dropdown-item" href="/startprocess"
-                                ><i className="bx bx-send me-1"></i> Start</a
-                              >
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><i className="fa fa-user fa-lg text-success me-3"></i> <strong>AV-33246</strong></td>
-                        <td>Hepatitis A</td>
-                        <td>
-                        GH₵ 200
-                        
-                        </td>
-                        <td><span className="badge bg-label-info me-1">Scheduled</span></td>
-                        <td>
-                          <div className="dropdown">
-                            <button type="button" className="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                              <i className="bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div className="dropdown-menu">
-                              <a className="dropdown-item" href="/viewprofile"
-                                ><i className="bx bx-show me-2"></i> View</a> 
-                                <a className="dropdown-item" href="/startprocess"
-                                ><i className="bx bx-send me-1"></i> Start</a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <i className="fa fa-user fa-lg text-primary me-3"></i> <strong>AV-33247</strong>
-                        </td>
-                        <td>Syphillis</td>
-                        <td> 
-                         GH₵ 200
-                          
-                        </td>
-                        <td><span className="badge bg-label-warning me-1">Pending</span></td>
-                        <td>
-                          <div className="dropdown">
-                            <button type="button" className="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                              <i className="bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div className="dropdown-menu">
-                              <a className="dropdown-item" href="/viewprofile"
-                                ><i className="bx bx-show"></i> View </a> 
-                                <a className="dropdown-item" href="/startprocess"
-                                ><i className="bx bx-send"></i> Start </a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
                   </table>
                 </div>
-        </div>
-      </div>
+              </div>
+         </div>
       {/* <!-- / Content --> */}
-
-      {/* <!-- Footer --> */}
-    
-      {/* <!-- / Footer --> */}
 
       <div className="content-backdrop fade"></div> 
       {/* <!-- Content wrapper --> */}
-          </div>
-    
+        </div>
         </div>  
 
        </div>  

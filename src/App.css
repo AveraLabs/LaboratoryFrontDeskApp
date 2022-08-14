@@ -8,7 +8,6 @@
   margin-left: 30%;
 } 
 
-
 @media screen and (min-width: 1212px) {
  .tab-menu { 
   position: fixed;
@@ -21,7 +20,7 @@
  }
 
  .main-session { 
-   margin: 120px;
+   margin-top: 120px;
  } 
  
 } 
