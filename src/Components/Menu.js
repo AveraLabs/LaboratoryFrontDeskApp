@@ -16,7 +16,6 @@ export const Menu = () => {
         <li className="menu-link ">
             <i className="menu-icon tf-icons bx bx-customize"></i>
             <div data-i18n="Dashboard" >Dashboard</div>
-          
         </li>
         </NavLink>
         {/* <!-- All tests today --> */}
