@@ -37,9 +37,7 @@ import MaterialTable from '@material-table/core';
 //   ViewColumn: forwardRef((props, ref) => <ViewColumn {...props} ref={ref} />),
 // }
 
-
 export const DataTable = () => { 
-
     const columns = [
         { title: 'First Name', field: 'firstName' },
         {
@@ -75,7 +73,11 @@ export const DataTable = () => {
 
   return (
     <div> 
-      <MaterialTable />
-       </div>
+      <MaterialTable 
+        title="List"
+        columns={columns} 
+        data={data}
+      />
+    </div>
   )
 }
