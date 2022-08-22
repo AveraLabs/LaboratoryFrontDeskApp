@@ -16,17 +16,18 @@ function AllTestToday() {
            <TabBar />  
          
           <div className="layout-page">
-                <Menu />
+
+              <Menu />
              {/* <!-- Content wrapper - All Test Today --> */}
+
             <div className="content-wrapper main-session">
               {/* <!-- Content --> */}
                   
               <div className="container-xxl flex-grow-1 container-p-y mt-5">
-           
                 {/* <!-- Users List Table --> */} 
                 <div className="card">
-                 <h5 className="card-header">All tests Today</h5>
-                  <DataTable />
+                  <h5 className="card-header">All tests Today</h5>
+                   <DataTable />
                 </div> 
 
               </div>

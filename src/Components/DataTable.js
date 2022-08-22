@@ -39,14 +39,14 @@ import MaterialTable from '@material-table/core';
 
 export const DataTable = () => { 
     const columns = [
-        { title: 'First Name', field: 'firstName' },
+        { title: 'AVERA ID', field: 'firstName' },
         {
-          title: 'Last Name',
+          title: 'TEST',
           field: 'lastName',
           initialEditValue: 'initial value',
         },
-        { title: 'Mobile Number', field: 'mobileNumber', type: 'numeric' },
-        { title: 'Email', field: 'email', editable: 'never' },
+        { title: 'COST', field: 'mobileNumber', type: 'numeric' },
+        { title: 'STATUS', field: 'email', editable: 'never' },
       ]
     
       const [data, setData] = useState([
@@ -74,7 +74,7 @@ export const DataTable = () => {
   return (
     <div> 
       <MaterialTable 
-        title="List"
+        title=""
         columns={columns} 
         data={data}
       />

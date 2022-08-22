@@ -1,4 +1,5 @@
 import React from 'react'
+import { DataTable } from '../Components/DataTable';
 import { Menu } from '../Components/Menu';
 import { TabBar } from '../Components/TaBbar';
 
@@ -20,9 +21,10 @@ const CancelledAppointment = () => {
        <div className="container-xxl flex-grow-1 container-p-y mt-5">   
 
          <div className="card">
-                <h5 className="card-header"> Cancelled Appointment </h5>
-                <div className="table-responsive text-nowrap">
-                  <table className="table">
+                <h5 className="card-header"> Cancelled Appointment </h5> 
+                <DataTable />
+                <div className="">
+                  {/* <table className="table">
                     <thead>
                       <tr>
                         <th>AVERA ID</th>
@@ -118,7 +120,7 @@ const CancelledAppointment = () => {
                         </td>
                       </tr>
                     </tbody>
-                  </table>
+                  </table> */}
                 </div>
               </div>
        </div>  
